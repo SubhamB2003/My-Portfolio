@@ -7,7 +7,8 @@ function Icon({ icon, icon_txt }) {
 
     return (
         <Box>
-            <img src={icon} alt={icon_txt} style={{ width: `${isNonMobile ? "4rem" : "3rem"}`, height: `${isNonMobile ? "8vh" : "6vh"}`, objectFit: "contain" }} />
+            <img src={icon} alt={icon_txt} draggable="false"
+                style={{ width: `${isNonMobile ? "4rem" : "3rem"}`, height: `${isNonMobile ? "8vh" : "6vh"}`, objectFit: "contain" }} />
         </Box>
     )
 }

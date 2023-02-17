@@ -22,7 +22,7 @@ function Navbar(props) {
 
     const drawer = (
         <Box onClick={handleDrawerToggle} sx={{ height: "100vh", backgroundColor: "rgb(17,14,21)" }}>
-            <List sx={{ height: "100vh", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", gap: "3rem", marginY: "auto" }}>
+            <List sx={{ height: "100%", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", gap: "3rem", marginY: "auto" }}>
                 <a href="#top" style={{ textDecoration: "none" }}>
                     <Typography sx={{
                         color: "white", fontSize: "1.3rem", fontFamily: "serif", fontWeight: "bold",
@@ -47,7 +47,7 @@ function Navbar(props) {
                         ':hover': { color: "#7027f9", transition: "0.5s" }
                     }}>Projects</Typography>
                 </a>
-                <a href="#project" style={{ textDecoration: "none" }}>
+                <a href="#contact" style={{ textDecoration: "none" }}>
                     <Typography sx={{
                         color: "white", fontSize: "1.3rem", fontFamily: "serif", fontWeight: "bold",
                         ':hover': { color: "#7027f9", transition: "0.5s" }
@@ -73,7 +73,7 @@ function Navbar(props) {
                         </Tooltip>
                         <Typography fontSize="1.25rem" paddingLeft={2} fontFamily="serif"
                             sx={{ flexGrow: 1, display: { xs: 'block', sm: 'block' }, color: "white" }}>
-                            Subham
+                            Subham.( )
                         </Typography>
                     </a>
                 </Box>
@@ -100,7 +100,7 @@ function Navbar(props) {
                                     ':hover': { color: "#7027f9", transition: "0.5s" }
                                 }}>Projects</Typography>
                             </a>
-                            <a href="#project" style={{ textDecoration: "none" }}>
+                            <a href="#contact" style={{ textDecoration: "none" }}>
                                 <Typography sx={{
                                     color: "white", fontSize: "1.3rem", fontFamily: "serif", fontWeight: "bold",
                                     ':hover': { color: "#7027f9", transition: "0.5s" }

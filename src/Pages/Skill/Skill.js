@@ -26,7 +26,7 @@ function Skill() {
     const isNonMobile = useMediaQuery("(min-width: 1000px)");
 
     return (
-        <Box id="skill" padding={isNonMobile ? "4.5rem" : "2rem"}>
+        <Box id="skill" padding={isNonMobile ? "4.5rem" : "2rem"} mt={!isNonMobile && 10}>
             <Box paddingY={2}>
                 <Typography color="white" fontFamily="serif" fontSize="1.2rem">SKILLS</Typography>
                 <Typography color="#9645ff" fontSize={isNonMobile ? "4.2rem" : "3rem"} fontFamily="serif" sx={{ lineHeight: "1.5" }}>My Skills</Typography>

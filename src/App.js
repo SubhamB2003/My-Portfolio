@@ -3,10 +3,14 @@ import { Box, CssBaseline, Fab, Fade, useScrollTrigger } from '@mui/material';
 import React from 'react';
 import "./App.css";
 import Cursor from "./components/Cursor/Cursor";
+// import Footer from './components/Footer/Footer';
 import Navbar from './components/Navbar/Navbar';
 import Progressbar from "./components/Progressbar/Progressbar";
 import About from './Pages/About/About';
+import Contact from './Pages/Contact/Contact';
+import GithubCal from './Pages/Github_Chart/GithubCal';
 import Home from './Pages/Home/Home';
+import Project from './Pages/Project/Project';
 import Skill from './Pages/Skill/Skill';
 
 
@@ -23,6 +27,10 @@ function App(props) {
         <Home />
         <About />
         <Skill />
+        <Project />
+        <GithubCal />
+        <Contact />
+        {/* <Footer /> */}
         <ScrollTop {...props}>
           <Fab size="small" aria-label="scroll back to top">
             <KeyboardArrowUp />
