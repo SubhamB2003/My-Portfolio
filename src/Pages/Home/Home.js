@@ -48,10 +48,12 @@ function Home() {
                 </Box>
 
                 <Box paddingY={isMobile ? 4 : 2} zIndex={1}>
-                    <Button variant="caption" sx={{
-                        paddingX: "2.2rem", paddingY: "0.4rem", border: "2px solid #7027f9", color: "white", fontSize: "1.1rem",
-                        fontFamily: "serif", borderRadius: "10px", textTransform: 'none', ':hover': { backgroundColor: "#9645ff" }
-                    }}>Let's Connect</Button>
+                    <a href="#contact" style={{ textDecoration: "none" }}>
+                        <Button variant="caption" sx={{
+                            paddingX: "2.2rem", paddingY: "0.4rem", border: "2px solid #7027f9", color: "white", fontSize: "1.1rem",
+                            fontFamily: "serif", borderRadius: "10px", textTransform: 'none', ':hover': { backgroundColor: "#9645ff" }
+                        }}>Let's Connect</Button>
+                    </a>
                 </Box>
             </Box>
 
