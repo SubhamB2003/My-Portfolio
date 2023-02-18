@@ -1,9 +1,9 @@
 import { KeyboardArrowUp } from '@mui/icons-material';
-import { Box, CssBaseline, Fab, Fade, useScrollTrigger } from '@mui/material';
+import { Box, CssBaseline, Divider, Fab, Fade, useScrollTrigger } from '@mui/material';
 import React from 'react';
 import "./App.css";
 import Cursor from "./components/Cursor/Cursor";
-// import Footer from './components/Footer/Footer';
+import Footer from './components/Footer/Footer';
 import Navbar from './components/Navbar/Navbar';
 import Progressbar from "./components/Progressbar/Progressbar";
 import About from './Pages/About/About';
@@ -21,7 +21,7 @@ function App(props) {
       <CssBaseline />
       <Progressbar />
       <Cursor />
-      <Box height="100%" sx={{ backgroundColor: "rgb(17,14,21)" }}>
+      <Box height="100%" sx={{ backgroundColor: "rgb(17,14,21)", overflow: "hidden" }}>
         <Navbar />
         <span id="back-to-top-anchor" />
         <Home />
@@ -30,12 +30,13 @@ function App(props) {
         <Project />
         <GithubCal />
         <Contact />
-        {/* <Footer /> */}
         <ScrollTop {...props}>
           <Fab size="small" aria-label="scroll back to top">
             <KeyboardArrowUp />
           </Fab>
         </ScrollTop>
+        <Divider sx={{ backgroundColor: "gray", width: "90%", marginX: "auto" }} />
+        <Footer />
       </Box>
     </>
   )
