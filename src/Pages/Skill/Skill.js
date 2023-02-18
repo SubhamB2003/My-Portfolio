@@ -1,4 +1,5 @@
 import { Box, Typography, useMediaQuery } from '@mui/material';
+import { motion } from 'framer-motion';
 import React from 'react';
 import Bootstrap from "../../Assets/Tech Icons/Bootstrap.png";
 import C from "../../Assets/Tech Icons/c.png";
@@ -26,52 +27,53 @@ function Skill() {
     const isNonMobile = useMediaQuery("(min-width: 1000px)");
 
     return (
-        <Box id="skill" padding={isNonMobile ? "4.5rem" : "2rem"} mt={!isNonMobile && 10}>
-            <Box paddingY={2}>
+        <Box id="skill" padding={isNonMobile ? "4.5rem" : "2rem"} mt={!isNonMobile && 10} component={motion.div}
+            initial={{ opacity: 0, y: 100 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 1, delay: 0.5 }}>
+            <Box paddingY={8}>
                 <Typography color="white" fontFamily="serif" fontSize="1.2rem">SKILLS</Typography>
-                <Typography color="#9645ff" fontSize={isNonMobile ? "4.2rem" : "3rem"} fontFamily="serif" sx={{ lineHeight: "1.5" }}>My Skills</Typography>
+                <Typography color="#9645ff" fontSize={isNonMobile ? "4.2rem" : "3rem"} fontFamily="serif" sx={{ lineHeight: "1.5", fontWeight: "bold" }}>My Skills</Typography>
                 <Typography color="white" fontFamily="serif" fontSize={isNonMobile ? "1.5rem" : "1.2rem"}>I like to take responsibility to craft aesthetic user experience <br />using modern frontend architecture.</Typography>
             </Box>
 
             <Box paddingTop={4}>
-                <Typography color="white" fontFamily="serif" fontSize="1.8rem">Languages and Tools</Typography>
+                <Typography color="white" fontFamily="serif" fontSize={isNonMobile ? "1.6rem" : "1.2rem"}>Languages and Tools</Typography>
                 <Box display="flex" gap={isNonMobile ? 3 : 2} paddingY={2}>
-                    <Icon icon={C} icon_txt={"C"} />
-                    <Icon icon={Java} icon_txt={"Java"} />
-                    <Icon icon={Html} icon_txt={"Html"} />
-                    <Icon icon={Css} icon_txt={"Css"} />
-                    <Icon icon={JavaScript} icon_txt={"JavaScript"} />
+                    <Icon icon={C} icon_txt={"C"} i={1} />
+                    <Icon icon={Java} icon_txt={"Java"} i={2} />
+                    <Icon icon={Html} icon_txt={"Html"} i={3} />
+                    <Icon icon={Css} icon_txt={"Css"} i={4} />
+                    <Icon icon={JavaScript} icon_txt={"JavaScript"} i={5} />
                 </Box>
             </Box>
 
             <Box>
-                <Typography color="white" fontFamily="serif" fontSize="1.8rem">Framework and Libraries</Typography>
+                <Typography color="white" fontFamily="serif" fontSize={isNonMobile ? "1.6rem" : "1.2rem"}>Framework and Libraries</Typography>
                 <Box display="flex" flexWrap="wrap" gap={isNonMobile ? 3 : 2} paddingY={2}>
-                    <Icon icon={ReactIcon} icon_txt={"React"} />
-                    <Icon icon={Redux} icon_txt={"Redux"} />
-                    <Icon icon={ReactNative} icon_txt={"React Native"} />
-                    <Icon icon={Node} icon_txt={"Node"} />
-                    <Icon icon={Express} icon_txt={"Express"} />
-                    <Icon icon={Bootstrap} icon_txt={"Bootstrap"} />
-                    <Icon icon={Tailwind} icon_txt={"Tailwind"} />
-                    <Icon icon={Mui} icon_txt={"Mui"} />
-                    <Icon icon={ChartJs} icon_txt={"Chart Js"} />
-                    <Icon icon={Framer} icon_txt={"Framer Motion"} />
+                    <Icon icon={ReactIcon} icon_txt={"React"} i={1} />
+                    <Icon icon={Redux} icon_txt={"Redux"} i={2} />
+                    <Icon icon={ReactNative} icon_txt={"React Native"} i={3} />
+                    <Icon icon={Node} icon_txt={"Node"} i={4} />
+                    <Icon icon={Express} icon_txt={"Express"} i={5} />
+                    <Icon icon={Bootstrap} icon_txt={"Bootstrap"} i={6} />
+                    <Icon icon={Tailwind} icon_txt={"Tailwind"} i={7} />
+                    <Icon icon={Mui} icon_txt={"Mui"} i={8} />
+                    <Icon icon={ChartJs} icon_txt={"Chart Js"} i={9} />
+                    <Icon icon={Framer} icon_txt={"Framer Motion"} i={10} />
                 </Box>
             </Box>
 
             <Box>
-                <Typography color="white" fontFamily="serif" fontSize="1.8rem">Database</Typography>
+                <Typography color="white" fontFamily="serif" fontSize={isNonMobile ? "1.6rem" : "1.2rem"}>Database</Typography>
                 <Box display="flex" gap={isNonMobile ? 3 : 2} paddingY={2}>
-                    <Icon icon={MongoDB} icon_txt={"MongoDB"} />
+                    <Icon icon={MongoDB} icon_txt={"MongoDB"} i={1} />
                 </Box>
             </Box>
 
             <Box>
-                <Typography color="white" fontFamily="serif" fontSize="1.8rem">Languages and Tools</Typography>
+                <Typography color="white" fontFamily="serif" fontSize={isNonMobile ? "1.6rem" : "1.2rem"}>Version Control</Typography>
                 <Box display="flex" gap={isNonMobile ? 3 : 2} paddingY={2}>
-                    <Icon icon={Git} icon_txt={"Git"} />
-                    <Icon icon={Github} icon_txt={"Github"} />
+                    <Icon icon={Git} icon_txt={"Git"} i={1} />
+                    <Icon icon={Github} icon_txt={"Github"} i={2} />
                 </Box>
             </Box>
         </Box>
