@@ -32,7 +32,7 @@ function Skill() {
             <Box paddingY={8}>
                 <Typography color="white" fontFamily="serif" fontSize="1.2rem">SKILLS</Typography>
                 <Typography color="#9645ff" fontSize={isNonMobile ? "4.2rem" : "3rem"} fontFamily="serif" sx={{ lineHeight: "1.5", fontWeight: "bold" }}>My Skills</Typography>
-                <Typography color="white" fontFamily="serif" fontSize={isNonMobile ? "1.5rem" : "1.2rem"}>I like to take responsibility to craft aesthetic user experience <br />using modern frontend architecture.</Typography>
+                <Typography color="white" fontFamily="serif" fontSize={isNonMobile ? "1.5rem" : "1.2rem"}>Experience in developing and deploying web applications.</Typography>
             </Box>
 
             <Box paddingTop={4}>

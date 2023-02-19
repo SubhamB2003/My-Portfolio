@@ -18,7 +18,7 @@ function Project() {
             <Box paddingY={6}>
                 <Typography color="white" fontFamily="serif" fontSize="1.2rem">Projects</Typography>
                 <Typography color="#9645ff" fontSize={isNonMobile ? "4.2rem" : "3rem"} fontFamily="serif" sx={{ lineHeight: "1.5", fontWeight: "bold" }}>My Projects</Typography>
-                <Typography color="white" fontFamily="serif" fontSize={isNonMobile ? "1.5rem" : "1.2rem"}>I like to take responsibility to craft aesthetic user experience <br />using modern frontend architecture.</Typography>
+                <Typography color="white" fontFamily="serif" fontSize={isNonMobile ? "1.5rem" : "1.2rem"}>I like to take responsibility to craft aesthetic user experience <br />using modern web architecture.</Typography>
             </Box>
             <VerticalTimeline>
                 <VerticalTimelineElement
@@ -30,7 +30,7 @@ function Project() {
                 >
                     <ProjectCard Project_Pic={require("../../Assets/Portfolio.png")} Title={"Portfolio Website"} Description={"It was my portfolio website."}
                         Role={"Frontend"} Tech_Stack={["React", "Mui", "Framer motion", "typed js"]}
-                        githubUrl={"https://github.com/SubhamB2003/My-Portfolio"} hostUrl={""} />
+                        githubUrl={"https://github.com/SubhamB2003/My-Portfolio"} hostUrl={"https://my-portfolio-website07.netlify.app/"} />
                 </VerticalTimelineElement>
                 <VerticalTimelineElement
                     className="vertical-timeline-element--work"

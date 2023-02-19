@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import React, { useEffect, useRef } from 'react';
 import Typed from "typed.js";
 import Flexbetween from '../../components/Flexbetween';
-import "./style.css";
+// import "./style.css";
 
 
 function Home() {
@@ -31,7 +31,7 @@ function Home() {
         <Flexbetween height="100vh" padding={isNonMobile ? "4.5rem" : "2rem"} mt={8}>
             <Box display="flex" flexDirection="column" justifyContent="center" component={motion.div}
                 initial={{ opacity: 0, y: 100 }} whileInView={{ opacity: 1, y: 1 }} transition={{ duration: 1, delay: 0.2 }}>
-                <Typography sx={{ fontSize: "1.3rem", color: "#9645ff" }} textAlign="start" color="white" fontFamily="serif">{"`<h5> "}Hi, my name is{" </h5>`"}</Typography>
+                <Typography sx={{ fontSize: "1.3rem", color: "white" }} textAlign="start" color="white" fontFamily="serif">{"`<h5> "}Hi, my name is{" </h5>`"}</Typography>
                 <Typography fontFamily="serif" sx={{ fontSize: `${isMobile ? "3.5rem" : "2.5rem"}`, fontWeight: "bold", lineHeight: "1.2" }} color="white">
                     Subham Bhattacharjee</Typography>
                 <Box paddingY={2} zIndex={1}>
@@ -42,25 +42,25 @@ function Home() {
                     </Typography>
                 </Box>
                 <Box display="flex" gap={isMobile ? 4 : 2} paddingY={2}>
-                    <a href="mailto:subhambhattachariyatech03@gmail.com" target="_blank" rel="noreferrer">
+                    <a href="mailto:subhambhattachariyatech03@gmail.com" target="_blank" rel="noreferrer" aria-label="mail">
                         <EmailOutlined sx={{ fill: "white", fontSize: `${isMobile ? "1.7rem" : "1.4rem"}`, ':hover': { fill: "orange" } }} />
                     </a>
-                    <a href="https://www.instagram.com/itz_subham07/" target="_blank" rel="noreferrer">
+                    <a href="https://www.instagram.com/itz_subham07/" target="_blank" rel="noreferrer" aria-label="instagram">
                         <InstagramIcon sx={{ fill: "white", fontSize: `${isMobile ? "1.7rem" : "1.4rem"}`, ':hover': { fill: "#d6249f" } }} />
                     </a>
-                    <a href="https://twitter.com/SubhamB82338312" target="_blank" rel="noreferrer">
+                    <a href="https://twitter.com/SubhamB82338312" target="_blank" rel="noreferrer" aria-label="twitter">
                         <Twitter sx={{ fill: "white", fontSize: `${isMobile ? "1.7rem" : "1.4rem"}`, ':hover': { fill: "#00acee" } }} />
                     </a>
-                    <a href="https://github.com/SubhamB2003" target="_blank" rel="noreferrer">
+                    <a href="https://github.com/SubhamB2003" target="_blank" rel="noreferrer" aria-label="github">
                         <GitHub sx={{ fill: "white", fontSize: `${isMobile ? "1.7rem" : "1.4rem"}` }} />
                     </a>
-                    <a href="https://www.linkedin.com/in/subham-bhattacharjee-b39a9a1ba/" target="_blank" rel="noreferrer">
+                    <a href="https://www.linkedin.com/in/subham-bhattacharjee-b39a9a1ba/" target="_blank" rel="noreferrer" aria-label="linkedin">
                         <LinkedIn sx={{ fill: "white", fontSize: `${isMobile ? "1.7rem" : "1.4rem"}`, ':hover': { fill: "#0e76a8" } }} />
                     </a>
                 </Box>
 
                 <Box paddingY={isMobile ? 4 : 2} zIndex={1}>
-                    <a href="#contact" style={{ textDecoration: "none" }}>
+                    <a href="#contact" style={{ textDecoration: "none" }} aria-label="connect">
                         <Button variant="caption" sx={{
                             paddingX: "2.2rem", paddingY: "0.4rem", border: "2px solid #7027f9", color: "white", fontSize: "1.1rem",
                             fontFamily: "serif", borderRadius: "10px", textTransform: 'none', ':hover': { backgroundColor: "#9645ff" }

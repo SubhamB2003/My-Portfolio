@@ -17,10 +17,9 @@ function Feedback() {
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        // const Data = { name, email, message };
         if (name !== '' && email !== '' && message !== '') {
-            emailjs.sendForm('service_35t09et',
-                'template_oz0blta',
+            emailjs.sendForm('service_u33z68g',
+                'template_3oqczjd',
                 e.target,
                 'user_ne1wvrwUw7RlLbCObv0tF').then((res) => {
                     console.log(res);
@@ -39,29 +38,26 @@ function Feedback() {
         <Box display="flex" justifyContent="space-evenly" flexDirection="column" padding={isNonMobile ? 10 : 5}
             marginY="auto" sx={{ backdropFilter: "blur(2rem)", borderRadius: "2%", boxShadow: "rgba(0, 0, 0, 0.80) 0px 5px 15px" }}
             className='md:p-10 px-8 py-4 my-auto rounded-tl-3xl rounded-br-3xl'>
-            <form onSubmit={handleSubmit} style={{ width: "100%" }}>
-                <Box display="flex" flexDirection="column" gap={4}>
-                    <TextField className='textfield' InputLabelProps={{
-                        style: { color: '#fff', fontFamily: "serif" }
-                    }} id="standard-basic1" required label="Name" variant="outlined" autoComplete='off' sx={{ input: { color: 'white', fontFamily: "serif" } }}
-                        onChange={(e) => setName(e.target.value)} value={name} />
-                    <TextField className='textfield' InputLabelProps={{
-                        style: { color: '#fff', fontFamily: "serif" }
-                    }} id="standard-basic2" label="Email" variant="outlined" autoComplete='off' required
-                        onChange={(e) => setEmail(e.target.value)} value={email} sx={{ input: { color: 'white', fontFamily: "serif" } }} />
-                    <TextField className='textfield' InputLabelProps={{
-                        style: { color: '#fff', fontFamily: "serif" }
-                    }} id="standard-basic3" required fullWidth label="Message" variant="outlined" autoComplete='off'
-                        onChange={(e) => setMessage(e.target.value)} value={message} sx={{ input: { color: 'white', fontFamily: "serif" } }} />
-                </Box>
-                <Box marginX="auto" mt={4}>
+            <form onSubmit={handleSubmit} style={{ width: "100%", display: "flex", flexDirection: "column", gap: "2rem" }}>
+                <TextField className='textfield' InputLabelProps={{
+                    style: { color: '#fff', fontFamily: "serif" }
+                }} id="standard-basic1" required label="Name" name='user_name' variant="outlined" autoComplete='off' sx={{ input: { color: 'white', fontFamily: "serif" } }}
+                    onChange={(e) => setName(e.target.value)} value={name} />
+                <TextField className='textfield' InputLabelProps={{
+                    style: { color: '#fff', fontFamily: "serif" }
+                }} id="standard-basic2" label="Email" variant="outlined" name='user_email' autoComplete='off' required
+                    onChange={(e) => setEmail(e.target.value)} value={email} sx={{ input: { color: 'white', fontFamily: "serif" } }} />
+                <TextField className='textfield' InputLabelProps={{
+                    style: { color: '#fff', fontFamily: "serif" }
+                }} id="standard-basic3" required label="Message" variant="outlined" autoComplete='off'
+                    onChange={(e) => setMessage(e.target.value)} name='message' value={message} sx={{ input: { color: 'white', fontFamily: "serif" } }} />
+                <Box marginX="auto" mt={2}>
                     <Button type="submit"
                         sx={{
-                            width: `${isNonMobile ? "28vw" : "100%"}`, height: "6vh", backgroundColor: "#7027f9",
+                            width: `${isNonMobile ? "28vw" : "60vw"}`, height: "6vh", backgroundColor: "#7027f9",
                             color: "white", fontFamily: "serif", ":hover": { backgroundColor: "#7027f9", opacity: "0.7" }
-                        }}
-                        className='mt-5'>
-                        <SendIcon className='mr-4' />Send</Button>
+                        }}>
+                        <SendIcon sx={{ marginRight: "4%" }} /> Send</Button>
                 </Box>
             </form>
         </Box>
