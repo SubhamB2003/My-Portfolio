@@ -3,6 +3,11 @@
   scroll-behavior: smooth;
 }
 
+img {
+  width: "auto";
+  height: "auto";
+}
+
 ::-webkit-scrollbar {
   width: 8px;
 }

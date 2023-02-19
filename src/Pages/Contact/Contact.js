@@ -17,10 +17,12 @@ function Contact() {
             <Box display="flex" justifyContent="space-around">
                 {isNonMobile && (
                     <Box paddingLeft={6}>
-                        <img src={require("../../Assets/contact.png")} alt="contact" draggable="false"
-                            style={{ width: "5rem", height: "5rem", rotate: "340deg", position: "absolute" }} />
-                        <img src={require("../../Assets/contact_person.png")} alt="contact_image" draggable="false"
-                            style={{ width: "90%", height: "90%" }} />
+                        <motion.img src={require("../../Assets/contact.png")} alt="contact" draggable="false"
+                            style={{ width: "5rem", height: "5rem", rotate: "340deg", position: "absolute" }}
+                            animate={{ scale: [1.1, 0.9, 1.1] }} transition={{ repeat: Infinity, duration: 4 }} />
+                        <motion.img src={require("../../Assets/contact_person.png")} alt="contact_image" draggable="false"
+                            style={{ width: "90%", height: "90%" }}
+                            animate={{ scale: [0.9, 1.1, 0.9] }} transition={{ repeat: Infinity, duration: 4 }} />
                     </Box>
                 )}
 

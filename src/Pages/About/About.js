@@ -4,7 +4,6 @@ import React, { useEffect, useRef } from 'react';
 import VanillaTilt from 'vanilla-tilt';
 import ResumeFile from "../../Assets/Resume.pdf";
 
-
 function About() {
 
     const isNonMobile = useMediaQuery("(min-width: 1000px)");
@@ -22,7 +21,7 @@ function About() {
             component={motion.div} initial={{ opacity: 0, y: 100 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 1, delay: 0.5 }}>
             <Box display="flex" justifyContent="center" alignItems="center" ref={picRef}>
                 <img src={require("../../Assets/IMG.png")} alt="Profile Pic" draggable="false"
-                    style={{ borderRadius: "10%", width: `${isNonMobile ? "20vw" : "60vw"}`, objectFit: "cover" }} />
+                    style={{ borderRadius: "10%", width: `${isNonMobile ? "20vw" : "60vw"}`, height: "auto", objectFit: "cover" }} />
             </Box>
             <Box display="flex" flexDirection="column" justifyContent="center" alignItems="center" mt={!isNonMobile && "30px"}>
                 <Box>
