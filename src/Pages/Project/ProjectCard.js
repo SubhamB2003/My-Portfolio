@@ -26,7 +26,7 @@ function ProjectCard({ Title, Description, Tech_Stack, Role, Project_Pic, github
                 <Typography textAlign="start" fontFamily="serif">
                     <span style={{ fontSize: "1.1rem", lineHeight: "0.6" }}>{Role}</span>
                     <a href={hostUrl} target="_blank" rel="noreferrer">
-                        <img src={require("../../Assets/netlify-logo.png")} alt="netlify-logo"
+                        <img src={require("../../Assets/netlify_logo.png")} alt="netlify logo"
                             style={{
                                 width: `${isNonMobile ? "6%" : "10%"}`, height: "auto", position: "absolute", right: "6%", top: `${isNonMobile ? "10%" : "87%"}`,
                                 bottom: `${!isNonMobile && "7%"}`

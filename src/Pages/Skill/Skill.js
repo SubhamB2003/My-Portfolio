@@ -1,24 +1,27 @@
 import { Box, Typography, useMediaQuery } from '@mui/material';
 import { motion } from 'framer-motion';
 import React from 'react';
-import Bootstrap from "../../Assets/Tech Icons/Bootstrap.png";
-import C from "../../Assets/Tech Icons/c.png";
-import ChartJs from "../../Assets/Tech Icons/Chart.png";
-import Css from "../../Assets/Tech Icons/css.svg";
-import Express from "../../Assets/Tech Icons/Express.png";
-import Framer from "../../Assets/Tech Icons/Framer Motion.jpg";
-import Git from "../../Assets/Tech Icons/git.svg";
-import Github from "../../Assets/Tech Icons/github.svg";
-import Html from "../../Assets/Tech Icons/html.svg";
-import Java from "../../Assets/Tech Icons/java.svg";
-import JavaScript from "../../Assets/Tech Icons/javascript.svg";
-import Mui from "../../Assets/Tech Icons/Metarial_UI.png";
-import MongoDB from "../../Assets/Tech Icons/mongodb.webp";
-import Node from "../../Assets/Tech Icons/nodejs.svg";
-import ReactIcon from "../../Assets/Tech Icons/react.svg";
-import ReactNative from "../../Assets/Tech Icons/React_Native.png";
-import Redux from "../../Assets/Tech Icons/redux.svg";
-import Tailwind from "../../Assets/Tech Icons/tailwindcss.svg";
+import Bootstrap from "../../Assets/Tech_Icons/Bootstrap.png";
+import ChartJs from "../../Assets/Tech_Icons/Chart.png";
+import Express from "../../Assets/Tech_Icons/Express.png";
+import Framer from "../../Assets/Tech_Icons/Framer_Motion.jpg";
+import Mui from "../../Assets/Tech_Icons/Metarial_UI.png";
+import Postman from '../../Assets/Tech_Icons/Postman.png';
+import ReactNative from "../../Assets/Tech_Icons/React_Native.png";
+import C from "../../Assets/Tech_Icons/c.png";
+import Css from "../../Assets/Tech_Icons/css.svg";
+import Git from "../../Assets/Tech_Icons/git.svg";
+import Github from "../../Assets/Tech_Icons/github.svg";
+import Html from "../../Assets/Tech_Icons/html.svg";
+import Java from "../../Assets/Tech_Icons/java.svg";
+import JavaScript from "../../Assets/Tech_Icons/javascript.svg";
+import MongoDB from "../../Assets/Tech_Icons/mongodb.webp";
+import Node from "../../Assets/Tech_Icons/nodejs.svg";
+import Postgresql from "../../Assets/Tech_Icons/postgresql.png";
+import Prisma from "../../Assets/Tech_Icons/prisma.png";
+import ReactIcon from "../../Assets/Tech_Icons/react.svg";
+import Redux from "../../Assets/Tech_Icons/redux.svg";
+import Tailwind from "../../Assets/Tech_Icons/tailwindcss.svg";
 import Icon from '../../components/Skill_Icons/Icon';
 
 
@@ -57,6 +60,7 @@ function Skill() {
                     <Icon icon={Bootstrap} icon_txt={"Bootstrap"} i={6} />
                     <Icon icon={Tailwind} icon_txt={"Tailwind"} i={7} />
                     <Icon icon={Mui} icon_txt={"Mui"} i={8} />
+                    <Icon icon={Prisma} icon_txt={"Prisma"} i={8} />
                     <Icon icon={ChartJs} icon_txt={"Chart Js"} i={9} />
                     <Icon icon={Framer} icon_txt={"Framer Motion"} i={10} />
                 </Box>
@@ -66,6 +70,7 @@ function Skill() {
                 <Typography color="white" fontFamily="serif" fontSize={isNonMobile ? "1.6rem" : "1.2rem"}>Database</Typography>
                 <Box display="flex" gap={isNonMobile ? 3 : 2} paddingY={2}>
                     <Icon icon={MongoDB} icon_txt={"MongoDB"} i={1} />
+                    <Icon icon={Postgresql} icon_txt={"Postgresql"} i={1} />
                 </Box>
             </Box>
 
@@ -74,6 +79,7 @@ function Skill() {
                 <Box display="flex" gap={isNonMobile ? 3 : 2} paddingY={2}>
                     <Icon icon={Git} icon_txt={"Git"} i={1} />
                     <Icon icon={Github} icon_txt={"Github"} i={2} />
+                    <Icon icon={Postman} icon_txt={"Postman"} i={2} />
                 </Box>
             </Box>
         </Box>

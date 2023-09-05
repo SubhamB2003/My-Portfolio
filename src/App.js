@@ -1,55 +1,43 @@
 import { KeyboardArrowUp } from '@mui/icons-material';
 import { Box, CssBaseline, Divider, Fab, Fade, useScrollTrigger } from '@mui/material';
-import React, { useState } from 'react';
+import React from 'react';
 import "./App.css";
-import Cursor from "./components/Cursor/Cursor";
-import Footer from './components/Footer/Footer';
-import Navbar from './components/Navbar/Navbar';
-import Progressbar from "./components/Progressbar/Progressbar";
 import About from './Pages/About/About';
 import Contact from './Pages/Contact/Contact';
 import GithubCal from './Pages/Github_Chart/GithubCal';
 import Home from './Pages/Home/Home';
 import Project from './Pages/Project/Project';
 import Skill from './Pages/Skill/Skill';
+import Cursor from "./components/Cursor/Cursor";
+import Footer from './components/Footer/Footer';
+import Navbar from './components/Navbar/Navbar';
+import Progressbar from "./components/Progressbar/Progressbar";
 
 
 function App(props) {
-
-  const [loading, setLoading] = useState(true);
-  const spinner = document.getElementById("spinner");
-  if (spinner) {
-    setTimeout(() => {
-      spinner.style.display = "none";
-      setLoading(false);
-    }, 2000);
-  }
-
   return (
-    !loading && (
-      <>
-        <CssBaseline />
-        <Progressbar />
-        <Cursor />
-        <Box height="100%" sx={{ backgroundColor: "rgb(17,14,21)", overflow: "hidden" }}>
-          <Navbar />
-          <span id="back-to-top-anchor" />
-          <Home />
-          <About />
-          <Skill />
-          <Project />
-          <GithubCal />
-          <Contact />
-          <ScrollTop {...props}>
-            <Fab size="small" aria-label="scroll back to top">
-              <KeyboardArrowUp />
-            </Fab>
-          </ScrollTop>
-          <Divider sx={{ backgroundColor: "gray", width: "90%", marginX: "auto" }} />
-          <Footer />
-        </Box>
-      </>
-    )
+    <>
+      <CssBaseline />
+      <Progressbar />
+      <Cursor />
+      <Box height="100%" sx={{ backgroundColor: "rgb(17,14,21)", overflow: "hidden" }}>
+        <Navbar />
+        <span id="back-to-top-anchor" />
+        <Home />
+        <About />
+        <Skill />
+        <Project />
+        <GithubCal />
+        <Contact />
+        <ScrollTop {...props}>
+          <Fab size="small" aria-label="scroll back to top">
+            <KeyboardArrowUp />
+          </Fab>
+        </ScrollTop>
+        <Divider sx={{ backgroundColor: "gray", width: "90%", marginX: "auto" }} />
+        <Footer />
+      </Box>
+    </>
   )
 }
 

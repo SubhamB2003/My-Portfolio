@@ -1,5 +1,5 @@
 // import { LooksOne, LooksTwo } from '@mui/icons-material';
-import { HourglassTopRounded, Looks3, Looks4, LooksOne, LooksTwo } from '@mui/icons-material';
+import { Looks3, Looks4, Looks5, LooksOne, LooksTwo } from '@mui/icons-material';
 import { Box, Typography, useMediaQuery } from '@mui/material';
 import { motion } from 'framer-motion';
 import React from 'react';
@@ -35,8 +35,8 @@ function Project() {
                 <VerticalTimelineElement
                     className="vertical-timeline-element--work"
                     contentStyle={{ background: '#9645ff', color: '#fff' }}
-                    date="10/01/2023 - 25/01/2023"
-                    iconStyle={{ background: 'yellow', color: 'black' }}
+                    date="10/07/2023 - 25/07/2023"
+                    iconStyle={{ background: 'rgb(16, 204, 82)', color: 'black' }}
                     icon={<LooksTwo />}
                 >
                     <ProjectCard Project_Pic={require("../../Assets/Alumini.png")} Title={"Placement Helper"} Description={"Share job or internship opportunities."}
@@ -46,11 +46,22 @@ function Project() {
                 <VerticalTimelineElement
                     className="vertical-timeline-element--work"
                     contentStyle={{ background: '#9645ff', color: '#fff' }}
-                    date="24/12/2022 - 29/12/2022"
-                    iconStyle={{ background: 'violet', color: 'black' }}
+                    date="08/06/2023 - 09/06/2023"
+                    iconStyle={{ background: 'yellow', color: 'black' }}
                     icon={<Looks3 />}
                 >
-                    <ProjectCard Project_Pic={require("../../Assets/Chat GPT.png")} Title={"Open Ai Chat GPT"} Description={"It was an AI-based chat application."}
+                    <ProjectCard Project_Pic={require("../../Assets/Authentication.png")} Title={"Firebase Authentication"} Description={"Firebase authentication template."}
+                        Role={"Frontend"} Tech_Stack={["React", "Firebase", "Tailwind Css"]}
+                        githubUrl={"https://github.com/SubhamB2003/Firebase-Authentication"} hostUrl={"https://authentication-service.netlify.app/"} />
+                </VerticalTimelineElement>
+                <VerticalTimelineElement
+                    className="vertical-timeline-element--work"
+                    contentStyle={{ background: '#9645ff', color: '#fff' }}
+                    date="24/12/2022 - 29/12/2022"
+                    iconStyle={{ background: '#4E4FEB', color: 'black' }}
+                    icon={<Looks4 />}
+                >
+                    <ProjectCard Project_Pic={require("../../Assets/Chat_GPT.png")} Title={"Open Ai Chat GPT"} Description={"It was an AI-based chat application."}
                         Role={"Full Stack"} Tech_Stack={["React", "Express", "Mui", "Openai API"]}
                         githubUrl={"https://github.com/SubhamB2003/OpenAPIChatGPT"} hostUrl={"https://openai-chatapp.netlify.app/"} />
                 </VerticalTimelineElement>
@@ -59,16 +70,12 @@ function Project() {
                     contentStyle={{ background: '#9645ff', color: '#fff' }}
                     date="08/05/2022 - 15/05/2022"
                     iconStyle={{ background: 'orange', color: 'black' }}
-                    icon={<Looks4 />}
+                    icon={<Looks5 />}
                 >
                     <ProjectCard Project_Pic={require("../../Assets/Extension.png")} Title={"Chrome Extension"} Description={"The extension is used to convert the current tab URL to a QR Code."}
                         Role={"Frontend"} Tech_Stack={["React", "Tailwind Css", "Json"]}
                         githubUrl={"https://github.com/SubhamB2003/Tab_Url_QR_Code_Generator"} hostUrl={"/"} />
                 </VerticalTimelineElement>
-                <VerticalTimelineElement
-                    iconStyle={{ background: 'rgb(16, 204, 82)', color: 'black' }}
-                    icon={<HourglassTopRounded />}
-                />
             </VerticalTimeline>
         </Box>
     )
