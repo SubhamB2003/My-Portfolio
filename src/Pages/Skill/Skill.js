@@ -18,9 +18,9 @@ import JavaScript from "../../Assets/Tech_Icons/javascript.svg";
 import MongoDB from "../../Assets/Tech_Icons/mongodb.webp";
 import Node from "../../Assets/Tech_Icons/nodejs.svg";
 import Postgresql from "../../Assets/Tech_Icons/postgresql.png";
-import Prisma from "../../Assets/Tech_Icons/prisma.png";
 import ReactIcon from "../../Assets/Tech_Icons/react.svg";
 import Redux from "../../Assets/Tech_Icons/redux.svg";
+import Sequelize from "../../Assets/Tech_Icons/sequelize.png";
 import Tailwind from "../../Assets/Tech_Icons/tailwindcss.svg";
 import Icon from '../../components/Skill_Icons/Icon';
 
@@ -43,31 +43,31 @@ function Skill() {
                 <Box display="flex" gap={isNonMobile ? 3 : 2} paddingY={2}>
                     <Icon icon={C} icon_txt={"C"} i={1} />
                     <Icon icon={Java} icon_txt={"Java"} i={2} />
-                    <Icon icon={Html} icon_txt={"Html"} i={3} />
-                    <Icon icon={Css} icon_txt={"Css"} i={4} />
-                    <Icon icon={JavaScript} icon_txt={"JavaScript"} i={5} />
+                    <Icon icon={JavaScript} icon_txt={"JavaScript"} i={3} />
                 </Box>
             </Box>
 
             <Box>
                 <Typography color="white" fontFamily="serif" fontSize={isNonMobile ? "1.6rem" : "1.2rem"}>Framework and Libraries</Typography>
                 <Box display="flex" flexWrap="wrap" gap={isNonMobile ? 3 : 2} paddingY={2}>
-                    <Icon icon={ReactIcon} icon_txt={"React"} i={1} />
-                    <Icon icon={Redux} icon_txt={"Redux"} i={2} />
-                    <Icon icon={ReactNative} icon_txt={"React Native"} i={3} />
-                    <Icon icon={Node} icon_txt={"Node"} i={4} />
-                    <Icon icon={Express} icon_txt={"Express"} i={5} />
-                    <Icon icon={Bootstrap} icon_txt={"Bootstrap"} i={6} />
-                    <Icon icon={Tailwind} icon_txt={"Tailwind"} i={7} />
-                    <Icon icon={Mui} icon_txt={"Mui"} i={8} />
-                    <Icon icon={Prisma} icon_txt={"Prisma"} i={8} />
-                    <Icon icon={ChartJs} icon_txt={"Chart Js"} i={9} />
-                    <Icon icon={Framer} icon_txt={"Framer Motion"} i={10} />
+                    <Icon icon={Html} icon_txt={"Html"} i={1} />
+                    <Icon icon={Css} icon_txt={"Css"} i={2} />
+                    <Icon icon={ReactIcon} icon_txt={"React"} i={3} />
+                    <Icon icon={Redux} icon_txt={"Redux"} i={4} />
+                    <Icon icon={ReactNative} icon_txt={"React Native"} i={5} />
+                    <Icon icon={Node} icon_txt={"Node"} i={6} />
+                    <Icon icon={Express} icon_txt={"Express"} i={7} />
+                    <Icon icon={Bootstrap} icon_txt={"Bootstrap"} i={8} />
+                    <Icon icon={Tailwind} icon_txt={"Tailwind"} i={9} />
+                    <Icon icon={Mui} icon_txt={"Mui"} i={10} />
+                    <Icon icon={Sequelize} icon_txt={"Sequelize"} i={11} />
+                    <Icon icon={ChartJs} icon_txt={"Chart Js"} i={12} />
+                    <Icon icon={Framer} icon_txt={"Framer Motion"} i={13} />
                 </Box>
             </Box>
 
             <Box>
-                <Typography color="white" fontFamily="serif" fontSize={isNonMobile ? "1.6rem" : "1.2rem"}>Database</Typography>
+                <Typography color="white" fontFamily="serif" fontSize={isNonMobile ? "1.6rem" : "1.2rem"}>Databases</Typography>
                 <Box display="flex" gap={isNonMobile ? 3 : 2} paddingY={2}>
                     <Icon icon={MongoDB} icon_txt={"MongoDB"} i={1} />
                     <Icon icon={Postgresql} icon_txt={"Postgresql"} i={1} />
