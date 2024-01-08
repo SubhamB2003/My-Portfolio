@@ -8,6 +8,7 @@ import GithubCal from './Pages/Github_Chart/GithubCal';
 import Home from './Pages/Home/Home';
 import Project from './Pages/Project/Project';
 import Skill from './Pages/Skill/Skill';
+import WorkExperience from './Pages/Work_Experience/WorkExperience';
 import Cursor from "./components/Cursor/Cursor";
 import Footer from './components/Footer/Footer';
 import Navbar from './components/Navbar/Navbar';
@@ -27,6 +28,7 @@ function App(props) {
         <About />
         <Skill />
         <Project />
+        <WorkExperience />
         <GithubCal />
         <Contact />
         <ScrollTop {...props}>

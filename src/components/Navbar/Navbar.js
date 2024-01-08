@@ -39,13 +39,19 @@ function Navbar(props) {
                     <Typography sx={{
                         color: "white", fontSize: "1.3rem", fontFamily: "serif", fontWeight: "bold",
                         ':hover': { color: "#7027f9", transition: "0.5s" }
-                    }}>Skills</Typography>
+                    }}>Skill</Typography>
                 </a>
                 <a href="#project" style={{ textDecoration: "none" }}>
                     <Typography sx={{
                         color: "white", fontSize: "1.3rem", fontFamily: "serif", fontWeight: "bold",
                         ':hover': { color: "#7027f9", transition: "0.5s" }
-                    }}>Projects</Typography>
+                    }}>Project</Typography>
+                </a>
+                <a href="#experience" style={{ textDecoration: "none" }}>
+                    <Typography sx={{
+                        color: "white", fontSize: "1.3rem", fontFamily: "serif", fontWeight: "bold",
+                        ':hover': { color: "#7027f9", transition: "0.5s" }
+                    }}>Experience</Typography>
                 </a>
                 <a href="#contact" style={{ textDecoration: "none" }}>
                     <Typography sx={{
@@ -92,13 +98,19 @@ function Navbar(props) {
                                 <Typography sx={{
                                     color: "white", fontSize: "1.3rem", fontFamily: "serif", fontWeight: "bold",
                                     ':hover': { color: "#7027f9", transition: "0.5s" }
-                                }}>Skills</Typography>
+                                }}>Skill</Typography>
                             </a>
                             <a href="#project" style={{ textDecoration: "none" }}>
                                 <Typography sx={{
                                     color: "white", fontSize: "1.3rem", fontFamily: "serif", fontWeight: "bold",
                                     ':hover': { color: "#7027f9", transition: "0.5s" }
-                                }}>Projects</Typography>
+                                }}>Project</Typography>
+                            </a>
+                            <a href="#experience" style={{ textDecoration: "none" }}>
+                                <Typography sx={{
+                                    color: "white", fontSize: "1.3rem", fontFamily: "serif", fontWeight: "bold",
+                                    ':hover': { color: "#7027f9", transition: "0.5s" }
+                                }}>Experience</Typography>
                             </a>
                             <a href="#contact" style={{ textDecoration: "none" }}>
                                 <Typography sx={{

@@ -1,10 +1,6 @@
-// import { LooksOne, LooksTwo } from '@mui/icons-material';
-import { Looks3, Looks4, Looks5, LooksOne, LooksTwo } from '@mui/icons-material';
 import { Box, Typography, useMediaQuery } from '@mui/material';
 import { motion } from 'framer-motion';
 import React from 'react';
-import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
-import 'react-vertical-timeline-component/style.min.css';
 import ProjectCard from './ProjectCard';
 
 
@@ -16,67 +12,40 @@ function Project() {
         <Box id="project" padding={isNonMobile ? "6rem" : "2rem"} sx={{ fontFamily: "serif", color: "white" }} component={motion.div}
             initial={{ opacity: 0, y: 100 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 1, delay: 0.5 }}>
             <Box paddingY={6}>
-                <Typography color="white" fontFamily="serif" fontSize="1.2rem">Projects</Typography>
+                <Typography color="white" fontFamily="serif" fontSize="1.2rem">PROJECT</Typography>
                 <Typography color="#9645ff" fontSize={isNonMobile ? "4.2rem" : "3rem"} fontFamily="serif" sx={{ lineHeight: "1.5", fontWeight: "bold" }}>My Projects</Typography>
                 <Typography color="white" fontFamily="serif" fontSize={isNonMobile ? "1.5rem" : "1.2rem"}>I like to take responsibility to craft aesthetic user experience <br />using modern web architecture.</Typography>
             </Box>
-            <VerticalTimeline>
-                <VerticalTimelineElement
-                    className="vertical-timeline-element--work"
-                    contentStyle={{ background: '#9645ff', color: '#fff' }}
-                    date="15/02/2023 - 18/02/2023"
-                    iconStyle={{ background: 'rgb(33, 150, 243)', color: 'black' }}
-                    icon={<LooksOne />}
-                >
-                    <ProjectCard Project_Pic={require("../../Assets/Portfolio.png")} Title={"Portfolio Website"} Description={"It was my portfolio website."}
-                        Role={"Frontend"} Tech_Stack={["React", "Mui", "Framer motion", "typed js"]}
-                        githubUrl={"https://github.com/SubhamB2003/My-Portfolio"} hostUrl={"https://my-portfolio-website07.netlify.app/"} />
-                </VerticalTimelineElement>
-                <VerticalTimelineElement
-                    className="vertical-timeline-element--work"
-                    contentStyle={{ background: '#9645ff', color: '#fff' }}
-                    date="10/07/2023 - 25/07/2023"
-                    iconStyle={{ background: 'rgb(16, 204, 82)', color: 'black' }}
-                    icon={<LooksTwo />}
-                >
-                    <ProjectCard Project_Pic={require("../../Assets/Alumini.png")} Title={"Placement Helper"} Description={"Share job or internship opportunities."}
-                        Role={"Mern Stack"} Tech_Stack={["Mern Stack", "Mui", "Git", "Github"]}
-                        githubUrl={"https://github.com/SubhamB2003/Placement-helper-frontend"} hostUrl={"https://placement-helper-alumini.netlify.app/"} />
-                </VerticalTimelineElement>
-                <VerticalTimelineElement
-                    className="vertical-timeline-element--work"
-                    contentStyle={{ background: '#9645ff', color: '#fff' }}
-                    date="08/06/2023 - 09/06/2023"
-                    iconStyle={{ background: 'yellow', color: 'black' }}
-                    icon={<Looks3 />}
-                >
-                    <ProjectCard Project_Pic={require("../../Assets/Authentication.png")} Title={"Firebase Authentication"} Description={"Firebase authentication template."}
-                        Role={"Frontend"} Tech_Stack={["React", "Firebase", "Tailwind Css"]}
-                        githubUrl={"https://github.com/SubhamB2003/Firebase-Authentication"} hostUrl={"https://authentication-service.netlify.app/"} />
-                </VerticalTimelineElement>
-                <VerticalTimelineElement
-                    className="vertical-timeline-element--work"
-                    contentStyle={{ background: '#9645ff', color: '#fff' }}
-                    date="24/12/2022 - 29/12/2022"
-                    iconStyle={{ background: '#4E4FEB', color: 'black' }}
-                    icon={<Looks4 />}
-                >
-                    <ProjectCard Project_Pic={require("../../Assets/Chat_GPT.png")} Title={"Open Ai Chat GPT"} Description={"It was an AI-based chat application."}
-                        Role={"Full Stack"} Tech_Stack={["React", "Express", "Mui", "Openai API"]}
-                        githubUrl={"https://github.com/SubhamB2003/OpenAPIChatGPT"} hostUrl={"https://openai-chatapp.netlify.app/"} />
-                </VerticalTimelineElement>
-                <VerticalTimelineElement
-                    className="vertical-timeline-element--work"
-                    contentStyle={{ background: '#9645ff', color: '#fff' }}
-                    date="08/05/2022 - 15/05/2022"
-                    iconStyle={{ background: 'orange', color: 'black' }}
-                    icon={<Looks5 />}
-                >
-                    <ProjectCard Project_Pic={require("../../Assets/Extension.png")} Title={"Chrome Extension"} Description={"The extension is used to convert the current tab URL to a QR Code."}
-                        Role={"Frontend"} Tech_Stack={["React", "Tailwind Css", "Json"]}
-                        githubUrl={"https://github.com/SubhamB2003/Tab_Url_QR_Code_Generator"} hostUrl={"/"} />
-                </VerticalTimelineElement>
-            </VerticalTimeline>
+            <Box width="100%" display="flex" flexWrap="wrap" justifyContent="space-evenly" rowGap={4}>
+                <ProjectCard Project_Pic={require("../../Assets/Portfolio.png")} Title={"Portfolio Website"}
+                    Description={"Featuring a website to showcase my projects, detailed work experience, and additional highlights that offer a comprehensive overview of my skills and achievements."}
+                    Role={"Frontend"} Tech_Stack={["React", "Mui", "Framer motion", "typed js"]}
+                    githubUrl={"https://github.com/SubhamB2003/My-Portfolio"}
+                    hostUrl={"https://my-portfolio-website07.netlify.app/"} />
+
+                <ProjectCard Project_Pic={require("../../Assets/Github-user-finder.png")} Title={"Github-User-Finder"}
+                    Description={"A web tool that provides insights on GitHub users through their username search and an elegant, user-friendly interface. Effortlessly explore GitHub profiles and repositories with unparalleled efficiency."}
+                    Role={"Frontend"} Tech_Stack={["React", "Tailwind Css", "Github-api"]}
+                    githubUrl={"https://github.com/SubhamB2003/Github-User-Finder"}
+                    hostUrl={"https://github-user-finder-00.netlify.app/"} />
+
+                <ProjectCard Project_Pic={require("../../Assets/Authentication.png")} Title={"Firebase Authentication"}
+                    Description={"Learn how to add email password and google authentication service using firebase."}
+                    Role={"Frontend"} Tech_Stack={["React", "Firebase", "Tailwind Css"]}
+                    githubUrl={"https://github.com/SubhamB2003/Firebase-Authentication"}
+                    hostUrl={"https://authentication-fbd44.web.app/"} />
+
+                <ProjectCard Project_Pic={require("../../Assets/Alumini.png")} Title={"Placement Helper"}
+                    Description={"Introducing a purpose-driven social media platform (Placement Helper) focused on assisting our college students in efficiently discovering job and internship opportunities."}
+                    Role={"Mern Stack"} Tech_Stack={["Mern Stack", "Mui", "Github"]}
+                    githubUrl={"https://github.com/SubhamB2003/PlacementHelper"}
+                    hostUrl={"https://placement-helper-alumini.netlify.app/"} />
+
+                <ProjectCard Project_Pic={require("../../Assets/Extension.png")} Title={"Chrome Extension"}
+                    Description={"This is a chrome extension. This extension convert the current tab url to QR Code."}
+                    Role={"Frontend"} Tech_Stack={["React", "Tailwind Css", "Json", "Chrome-extension"]}
+                    githubUrl={"https://github.com/SubhamB2003/Tab_Url_QR_Code_Generator"} hostUrl={"/"} />
+            </Box>
         </Box>
     )
 }

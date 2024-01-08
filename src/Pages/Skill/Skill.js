@@ -10,12 +10,14 @@ import Postman from '../../Assets/Tech_Icons/Postman.png';
 import ReactNative from "../../Assets/Tech_Icons/React_Native.png";
 import C from "../../Assets/Tech_Icons/c.png";
 import Css from "../../Assets/Tech_Icons/css.svg";
+import Firebase from "../../Assets/Tech_Icons/firebase.png";
 import Git from "../../Assets/Tech_Icons/git.svg";
 import Github from "../../Assets/Tech_Icons/github.svg";
 import Html from "../../Assets/Tech_Icons/html.svg";
 import Java from "../../Assets/Tech_Icons/java.svg";
 import JavaScript from "../../Assets/Tech_Icons/javascript.svg";
 import MongoDB from "../../Assets/Tech_Icons/mongodb.webp";
+import Netlify from "../../Assets/Tech_Icons/netlify.png";
 import Node from "../../Assets/Tech_Icons/nodejs.svg";
 import Postgresql from "../../Assets/Tech_Icons/postgresql.png";
 import ReactIcon from "../../Assets/Tech_Icons/react.svg";
@@ -33,7 +35,7 @@ function Skill() {
         <Box id="skill" padding={isNonMobile ? "4.5rem" : "2rem"} mt={!isNonMobile && 10} component={motion.div}
             initial={{ opacity: 0, y: 100 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 1, delay: 0.5 }}>
             <Box paddingY={8}>
-                <Typography color="white" fontFamily="serif" fontSize="1.2rem">SKILLS</Typography>
+                <Typography color="white" fontFamily="serif" fontSize="1.2rem">SKILL</Typography>
                 <Typography color="#9645ff" fontSize={isNonMobile ? "4.2rem" : "3rem"} fontFamily="serif" sx={{ lineHeight: "1.5", fontWeight: "bold" }}>My Skills</Typography>
                 <Typography color="white" fontFamily="serif" fontSize={isNonMobile ? "1.5rem" : "1.2rem"}>Experience in developing and deploying web applications.</Typography>
             </Box>
@@ -70,7 +72,7 @@ function Skill() {
                 <Typography color="white" fontFamily="serif" fontSize={isNonMobile ? "1.6rem" : "1.2rem"}>Databases</Typography>
                 <Box display="flex" gap={isNonMobile ? 3 : 2} paddingY={2}>
                     <Icon icon={MongoDB} icon_txt={"MongoDB"} i={1} />
-                    <Icon icon={Postgresql} icon_txt={"Postgresql"} i={1} />
+                    <Icon icon={Postgresql} icon_txt={"Postgresql"} i={2} />
                 </Box>
             </Box>
 
@@ -79,7 +81,15 @@ function Skill() {
                 <Box display="flex" gap={isNonMobile ? 3 : 2} paddingY={2}>
                     <Icon icon={Git} icon_txt={"Git"} i={1} />
                     <Icon icon={Github} icon_txt={"Github"} i={2} />
-                    <Icon icon={Postman} icon_txt={"Postman"} i={2} />
+                    <Icon icon={Postman} icon_txt={"Postman"} i={3} />
+                </Box>
+            </Box>
+
+            <Box>
+                <Typography color="white" fontFamily="serif" fontSize={isNonMobile ? "1.6rem" : "1.2rem"}>Deployment</Typography>
+                <Box display="flex" gap={isNonMobile ? 3 : 2} paddingY={2}>
+                    <Icon icon={Netlify} icon_txt={"Netlify"} i={1} />
+                    <Icon icon={Firebase} icon_txt={"Firebase"} i={2} />
                 </Box>
             </Box>
         </Box>
