@@ -21,25 +21,25 @@ function Project() {
                     Description={"Featuring a website to showcase my projects, detailed work experience, and additional highlights that offer a comprehensive overview of my skills and achievements."}
                     Role={"Frontend"} Tech_Stack={["React", "Mui", "Framer motion", "typed js"]}
                     githubUrl={"https://github.com/SubhamB2003/My-Portfolio"}
-                    hostUrl={"https://my-portfolio-website07.netlify.app/"} />
+                    hostUrl={"https://itz-subham-dev.vercel.app"} />
 
                 <ProjectCard Project_Pic={require("../../Assets/Github-user-finder.png")} Title={"Github-User-Finder"}
                     Description={"A web tool that provides insights on GitHub users through their username search and an elegant, user-friendly interface. Effortlessly explore GitHub profiles and repositories with unparalleled efficiency."}
                     Role={"Frontend"} Tech_Stack={["React", "Tailwind Css", "Github-api"]}
                     githubUrl={"https://github.com/SubhamB2003/Github-User-Finder"}
-                    hostUrl={"https://github-user-finder-00.netlify.app/"} />
+                    hostUrl={"https://github-user-finder-web.vercel.app"} />
 
                 <ProjectCard Project_Pic={require("../../Assets/Authentication.png")} Title={"Firebase Authentication"}
                     Description={"Learn how to add email password and google authentication service using firebase."}
                     Role={"Frontend"} Tech_Stack={["React", "Firebase", "Tailwind Css"]}
                     githubUrl={"https://github.com/SubhamB2003/Firebase-Authentication"}
-                    hostUrl={"https://authentication-fbd44.web.app/"} />
+                    hostUrl={"https://authentication-fbd44.web.app"} />
 
                 <ProjectCard Project_Pic={require("../../Assets/Alumini.png")} Title={"Placement Helper"}
                     Description={"Introducing a purpose-driven social media platform (Placement Helper) focused on assisting our college students in efficiently discovering job and internship opportunities."}
                     Role={"Mern Stack"} Tech_Stack={["Mern Stack", "Mui", "Github"]}
                     githubUrl={"https://github.com/SubhamB2003/PlacementHelper"}
-                    hostUrl={"https://placement-helper-alumini.netlify.app/"} />
+                    hostUrl={"https://placement-helper.vercel.app"} />
 
                 <ProjectCard Project_Pic={require("../../Assets/Extension.png")} Title={"Chrome Extension"}
                     Description={"This is a chrome extension. This extension convert the current tab url to QR Code."}

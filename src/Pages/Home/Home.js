@@ -45,7 +45,7 @@ function Home() {
                     <a href="mailto:subhambhattachariyatech03@gmail.com" target="_blank" rel="noreferrer" aria-label="mail">
                         <EmailOutlined sx={{ fill: "white", fontSize: `${isMobile ? "1.7rem" : "1.4rem"}`, ':hover': { fill: "orange" } }} />
                     </a>
-                    <a href="https://www.instagram.com/itz_subham07/" target="_blank" rel="noreferrer" aria-label="instagram">
+                    <a href="https://www.instagram.com/itz_subham07" target="_blank" rel="noreferrer" aria-label="instagram">
                         <InstagramIcon sx={{ fill: "white", fontSize: `${isMobile ? "1.7rem" : "1.4rem"}`, ':hover': { fill: "#d6249f" } }} />
                     </a>
                     <a href="https://twitter.com/SubhamB82338312" target="_blank" rel="noreferrer" aria-label="twitter">
@@ -54,7 +54,7 @@ function Home() {
                     <a href="https://github.com/SubhamB2003" target="_blank" rel="noreferrer" aria-label="github">
                         <GitHub sx={{ fill: "white", fontSize: `${isMobile ? "1.7rem" : "1.4rem"}` }} />
                     </a>
-                    <a href="https://www.linkedin.com/in/subham-bhattacharjee-b39a9a1ba/" target="_blank" rel="noreferrer" aria-label="linkedin">
+                    <a href="https://www.linkedin.com/in/subham-bhattacharjee-b39a9a1ba" target="_blank" rel="noreferrer" aria-label="linkedin">
                         <LinkedIn sx={{ fill: "white", fontSize: `${isMobile ? "1.7rem" : "1.4rem"}`, ':hover': { fill: "#0e76a8" } }} />
                     </a>
                 </Box>
