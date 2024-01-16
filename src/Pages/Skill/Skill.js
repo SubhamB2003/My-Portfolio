@@ -24,6 +24,7 @@ import ReactIcon from "../../Assets/Tech_Icons/react.svg";
 import Redux from "../../Assets/Tech_Icons/redux.svg";
 import Sequelize from "../../Assets/Tech_Icons/sequelize.png";
 import Tailwind from "../../Assets/Tech_Icons/tailwindcss.svg";
+import Vercel from "../../Assets/Tech_Icons/vercel.png";
 import Icon from '../../components/Skill_Icons/Icon';
 
 
@@ -88,8 +89,9 @@ function Skill() {
             <Box>
                 <Typography color="white" fontFamily="serif" fontSize={isNonMobile ? "1.6rem" : "1.2rem"}>Deployment</Typography>
                 <Box display="flex" gap={isNonMobile ? 3 : 2} paddingY={2}>
-                    <Icon icon={Netlify} icon_txt={"Netlify"} i={1} />
+                    <Icon icon={Vercel} icon_txt={"Vercel"} i={1} />
                     <Icon icon={Firebase} icon_txt={"Firebase"} i={2} />
+                    <Icon icon={Netlify} icon_txt={"Netlify"} i={3} />
                 </Box>
             </Box>
         </Box>
