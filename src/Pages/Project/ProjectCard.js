@@ -20,7 +20,8 @@ function ProjectCard({ Title, Description, Tech_Stack, Role, Project_Pic, github
     return (
         <Box width={isNonMobile ? "40%" : "100%"} border="1px solid" padding="1.5rem 0" display="flex" flexDirection="column"
             justifyContent="center" alignItems="center" sx={{
-                borderRadius: "1rem", backdropFilter: "blur(2rem)", boxShadow: "5px 5px white", transition: 'transform 0.3s ease-out',
+                borderRadius: "1rem", backgroundColor: 'rgb(23, 23, 33)',
+                boxShadow: 'rgba(23, 92, 230, 0.25) 0px 4px 24px', transition: 'transform 0.3s ease-out',
                 ':hover': {
                     transform: 'scale(1.05)',
                 }

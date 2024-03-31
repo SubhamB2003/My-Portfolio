@@ -1,52 +1,68 @@
-import { Circle, CorporateFare, Language, Person } from '@mui/icons-material';
-import { Box, Chip, IconButton, Typography, useMediaQuery } from "@mui/material";
+import { ArrowLeft, ArrowRight, Circle, FileCopy, Language } from '@mui/icons-material';
+import { Box, Chip, Typography, useMediaQuery } from "@mui/material";
 import React from 'react';
 
 
-function Experience({ companyName, website, techStack, role, keyPoints, certificate }) {
+function Experience({ experience }) {
 
     const isNonMobile = useMediaQuery("(min-width: 1000px)");
+    const isBreakPoint = useMediaQuery("(min-width: 1200px)");
 
     return (
-        <Box>
-            <Box display="flex" justifyContent="space-between">
-                <Box display="flex">
-                    <CorporateFare fontSize="large" sx={{ fill: "white" }} />
-                    <Typography variant='' fontFamily="serif" pl={2} fontSize={isNonMobile ? "1.4rem" : "1.2rem"}>{companyName}</Typography>
-                </Box>
-                <a href={website} target='_blank' rel='noreferrer'>
-                    <Language fontSize={isNonMobile ? 'large' : 'medium'} sx={{ fill: "white" }} />
-                </a>
-            </Box>
+        <Box display="flex" flexDirection={experience.id % 2 !== 0 && isBreakPoint && "row-reverse"} >
+            {experience.id % 2 === 0 ? <ArrowLeft fontSize='medium' color='white' /> : !isBreakPoint ?
+                <ArrowLeft fontSize='medium' color='white' /> : <ArrowRight fontSize='medium' color='white' />}
+            <Box key={experience.id} sx={{
+                border: '0.1px solid gray', borderRadius: '10px', marginBottom: '2rem', boxShadow: 'rgba(23, 92, 230, 0.25) 0px 4px 24px',
+                padding: `${isNonMobile ? '1rem 1.2rem' : '1rem 0.8rem'}`, backgroundColor: 'rgb(23, 23, 33)',
+            }} >
 
-            <Box display="flex" alignItems="center">
-                <IconButton sx={{ border: "1px solid white" }}>
-                    <Person fontSize='medium' sx={{ fill: "white" }} />
-                </IconButton>
-                <Typography variant='' fontFamily="serif" pl={1.5} fontSize={isNonMobile ? "1.2rem" : "1.1rem"}>{role}</Typography>
-            </Box>
-
-            <Box mt={2} pl={2}>
-                {keyPoints.map((item, i) =>
-                    <Box display="flex" alignItems="start">
-                        <Circle fontSize='small' sx={{ pt: '0.3rem' }} />
-                        <Typography variant='' fontFamily="serif" pl={2} fontSize={isNonMobile ? "1rem" : "0.9rem"}>{item}</Typography>
+                <Box display="flex" flexDirection={!isNonMobile && 'column'} justifyContent="space-between">
+                    <Box display="flex" alignItems="center">
+                        <img style={{
+                            width: `${isNonMobile ? '3rem' : '2.5rem'}`, height: `${isNonMobile ? '3rem' : '2.5rem'}`,
+                            borderRadius: '8px'
+                        }} src={require(`../../Assets/Experience/${experience.img}`)} alt='company' />
+                        <Box display="flex" flexDirection="column" >
+                            <Typography textAlign='start' fontFamily="serif" pl={2} fontSize={isNonMobile ? "1.4rem" : "1rem"} lineHeight={1} color="white">{experience.role}</Typography>
+                            <Typography textAlign='start' fontFamily="serif" pl={2} fontSize={isNonMobile ? "1.1rem" : "0.8rem"} lineHeight={1.5} color="rgb(242 243 244 / 60%)">{experience.company}</Typography>
+                            <Typography textAlign='start' fontFamily="serif" pl={2} fontSize={isNonMobile ? "1rem" : "0.7rem"} lineHeight={1} color="rgb(177 178 179 / 60%)">{experience.date}</Typography>
+                        </Box>
                     </Box>
-                )}
-            </Box>
+                    <Box display="flex" alignItems="start" justifyContent='space-around' gap={2} mt={!isNonMobile && 1}>
+                        <a href={experience.doc} target='_blank' rel='noreferrer' style={{ textDecoration: "none" }}>
+                            <FileCopy fontSize={isNonMobile ? 'medium' : 'small'} sx={{ fill: "rgb(242 243 244 / 60%)" }} />
+                        </a>
 
-            <Box display="flex" flexWrap="wrap" gap={1} mt={2}>
-                {techStack?.map((item, i) => (
-                    <Chip key={i} label={item} variant="outlined" size='medium' sx={{ color: "white", fontFamily: "serif" }} />
-                ))}
-            </Box>
+                        <a href={experience.url} target='_blank' rel='noreferrer'>
+                            <Language fontSize={isNonMobile ? 'medium' : 'small'} sx={{ fill: "rgb(242 243 244 / 60%)" }} />
+                        </a>
+                    </Box>
+                </Box>
 
-            <Box mt={2} display="flex" justifyContent="center" alignItems="center">
-                <a href={certificate} target='_blank' rel='noreferrer' style={{ textDecoration: "none" }}>
+                <Box mt={isNonMobile && 1} pl={2}>
+                    {experience.desc?.map((item, i) =>
+                        <Box display="flex" alignItems="start" justifyContent="start" pt={1}>
+                            <Circle sx={{ width: `${isNonMobile ? '1rem' : '0.8rem'}`, height: `${isNonMobile ? '1rem' : '0.8rem'}`, color: 'gray' }} />
+                            <Typography textAlign='start' fontFamily="serif" color="rgb(242 243 244 / 60%)" pl={1} fontSize="0.9rem" lineHeight={1}>{item}</Typography>
+                        </Box>
+                    )}
+                </Box>
+
+                <Box display="flex" justifyContent="center" alignItems="center" flexWrap="wrap" gap={1} mt={2}>
+                    <Typography fontFamily="serif" fontSize={isNonMobile ? "1.2rem" : "1rem"} color="rgb(242 243 244 / 60%)" fontWeight="bold">Skills :</Typography>
+                    {experience.skills?.map((item, i) => (
+                        <Chip key={i} label={item} size='small' sx={{ backgroundColor: 'rgba(133, 76, 230, 0.082)', color: "#9645ff", fontFamily: "serif", border: '0.1px solid #9645ff' }} />
+                    ))}
+                </Box>
+
+                {/* <Box mt={1} display="flex" justifyContent="center" alignItems="center">
+                <a href={experience.doc} target='_blank' rel='noreferrer' style={{ textDecoration: "none" }}>
                     <Box sx={{ border: "2px solid white", borderRadius: "10px" }} px={5} py={1.2}>
                         <Typography variant='' fontFamily="serif" fontSize="1.1rem" color="white">View Certificate</Typography>
                     </Box>
                 </a>
+            </Box> */}
             </Box>
         </Box>
     )

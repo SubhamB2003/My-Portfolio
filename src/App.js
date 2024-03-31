@@ -21,7 +21,7 @@ function App(props) {
       <CssBaseline />
       <Progressbar />
       <Cursor />
-      <Box height="100%" sx={{ backgroundColor: "rgb(17,14,21)", overflow: "hidden" }}>
+      <Box width="100%" height="100%" sx={{ backgroundColor: "rgb(17,14,21)", overflow: "hidden" }}>
         <Navbar />
         <span id="back-to-top-anchor" />
         <Home />

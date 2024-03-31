@@ -9,7 +9,7 @@ function Project() {
     const isNonMobile = useMediaQuery("(min-width: 1000px)");
 
     return (
-        <Box id="project" padding={isNonMobile ? "6rem" : "2rem"} sx={{ fontFamily: "serif", color: "white" }} component={motion.div}
+        <Box id="project" padding={isNonMobile ? "6rem" : "1rem"} sx={{ fontFamily: "serif", color: "white" }} component={motion.div}
             initial={{ opacity: 0, y: 100 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 1, delay: 0.5 }}>
             <Box paddingY={6}>
                 <Typography color="white" fontFamily="serif" fontSize="1.2rem">PROJECT</Typography>

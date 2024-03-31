@@ -8,7 +8,7 @@ function Contact() {
     const isNonMobile = useMediaQuery("(min-width: 1000px)");
 
     return (
-        <Box id="contact" padding={isNonMobile ? "5rem" : "2rem"} component={motion.div}
+        <Box id="contact" padding={isNonMobile ? "5rem" : "1rem"} component={motion.div}
             initial={{ opacity: 0, y: 100 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 1, delay: 0.5 }}>
             <Box paddingY={2} marginBottom={3}>
                 <Typography color="#9645ff" fontSize={isNonMobile ? "4.2rem" : "3rem"} fontFamily="serif" sx={{ lineHeight: "1", fontWeight: "bold" }}>Contact</Typography>

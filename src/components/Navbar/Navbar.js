@@ -79,7 +79,7 @@ function Navbar(props) {
                         </Tooltip>
                         <Typography fontSize="1.25rem" paddingLeft={2} fontFamily="serif"
                             sx={{ flexGrow: 1, display: { xs: 'block', sm: 'block' }, color: "white" }}>
-                            Subham.( )
+                            Subham.<span style={{ color: "#9645ff" }}>( )</span>
                         </Typography>
                     </a>
                 </Box>
