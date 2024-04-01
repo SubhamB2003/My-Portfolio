@@ -33,23 +33,23 @@ function ProjectCard({ Title, Description, Tech_Stack, Role, Project_Pic, github
             <Box display="flex" flexDirection="column" padding={isNonMobile ? "0.6rem 2rem" : "0.6rem 1.2rem"}>
                 <Box display="flex" justifyContent="space-between">
                     <Typography fontFamily="serif">
-                        <span style={{ fontSize: "1.2rem" }}>{Role}</span><br />
+                        <span style={{ fontSize: "1.2rem", color: "rgb(242 243 244 / 60%)" }}>{Role}</span><br />
                         <span style={{ fontSize: "1.6rem" }}>{Title}</span><br />
                     </Typography>
 
                     <Box display="flex" alignItems="start" columnGap={2}>
                         <a href={hostUrl} target="_blank" rel="noreferrer">
-                            <Language fontSize={isNonMobile ? 'large' : 'medium'} sx={{ fill: "white" }} />
+                            <Language fontSize={'medium'} sx={{ fill: "white" }} />
                         </a>
                         <a href={githubUrl} target="_blank" rel="noreferrer">
-                            <GitHub fontSize={isNonMobile ? 'large' : 'medium'} sx={{ fill: "white" }} />
+                            <GitHub fontSize={'medium'} sx={{ fill: "white" }} />
                         </a>
                     </Box>
                 </Box>
-                <Typography fontFamily="serif" style={{ fontSize: "1.1rem" }}>{Description}</Typography>
+                <Typography fontFamily="serif" style={{ fontSize: "1.1rem" }} color="rgb(242 243 244 / 60%)">{Description}</Typography>
                 <Box display="flex" flexWrap="wrap" gap={1} mt={2}>
                     {Tech_Stack?.map((item, i) => (
-                        <Chip key={i} label={item} variant="outlined" size='medium' sx={{ color: "white", fontFamily: "serif" }} />
+                        <Chip key={i} label={item} variant="outlined" size='medium' sx={{ backgroundColor: 'rgba(133, 76, 230, 0.082)', color: "#9645ff", fontFamily: "serif", border: '0.1px solid #9645ff' }} />
                     ))}
                 </Box>
             </Box>

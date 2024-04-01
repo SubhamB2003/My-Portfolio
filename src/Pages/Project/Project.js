@@ -13,10 +13,10 @@ function Project() {
             initial={{ opacity: 0, y: 100 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 1, delay: 0.5 }}>
             <Box paddingY={6}>
                 <Typography color="white" fontFamily="serif" fontSize="1.2rem">PROJECT</Typography>
-                <Typography color="#9645ff" fontSize={isNonMobile ? "4.2rem" : "3rem"} fontFamily="serif" sx={{ lineHeight: "1.5", fontWeight: "bold" }}>My Projects</Typography>
-                <Typography color="white" fontFamily="serif" fontSize={isNonMobile ? "1.5rem" : "1.2rem"}>I like to take responsibility to craft aesthetic user experience <br />using modern web architecture.</Typography>
+                <Typography color="#9645ff" fontSize={isNonMobile ? "4rem" : "3rem"} fontFamily="serif" sx={{ lineHeight: "1.5", fontWeight: "bold" }}>My Projects</Typography>
+                <Typography color="white" fontFamily="serif" fontSize={isNonMobile ? "1.4rem" : "1.2rem"} lineHeight={1.2}>I like to take responsibility to craft aesthetic user experience <br />using modern web architecture.</Typography>
             </Box>
-            <Box width="100%" display="flex" flexWrap="wrap" justifyContent="space-evenly" rowGap={4}>
+            <Box width="100%" display="flex" flexWrap="wrap" justifyContent="space-evenly" rowGap={4} px={!isNonMobile && "1rem"}>
                 <ProjectCard Project_Pic={require("../../Assets/Portfolio.png")} Title={"Portfolio Website"}
                     Description={"Featuring a website to showcase my projects, detailed work experience, and additional highlights that offer a comprehensive overview of my skills and achievements."}
                     Role={"Frontend"} Tech_Stack={["React", "Mui", "Framer motion", "typed js"]}

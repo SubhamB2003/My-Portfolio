@@ -18,7 +18,7 @@ function Work_Experience() {
         >
             <Box paddingY={6}>
                 <Typography color="white" fontFamily="serif" fontSize="1.2rem">WORK EXPERIENCE</Typography>
-                <Typography color="#9645ff" fontSize={isNonMobile ? "4.2rem" : "3rem"} fontFamily="serif" sx={{ lineHeight: "1.5", fontWeight: "bold" }}>My Work Experience</Typography>
+                <Typography color="#9645ff" fontSize={isNonMobile ? "4rem" : "3rem"} fontFamily="serif" sx={{ lineHeight: "1.2", fontWeight: "bold" }}>My Work Experience</Typography>
                 {/* <Typography color="white" fontFamily="serif" fontSize={isNonMobile ? "1.5rem" : "1.2rem"}>I like to take responsibility to craft aesthetic user experience <br />using modern web architecture.</Typography> */}
             </Box>
 

@@ -7,6 +7,7 @@ import Framer from "../../Assets/Tech_Icons/Framer_Motion.jpg";
 import Mui from "../../Assets/Tech_Icons/Metarial_UI.png";
 import Postman from '../../Assets/Tech_Icons/Postman.png';
 import ReactNative from "../../Assets/Tech_Icons/React_Native.png";
+import Typeorm from "../../Assets/Tech_Icons/Typeormlogo.png";
 import C from "../../Assets/Tech_Icons/c.png";
 import Css from "../../Assets/Tech_Icons/css.svg";
 import Docker from "../../Assets/Tech_Icons/docker.png";
@@ -17,6 +18,7 @@ import Html from "../../Assets/Tech_Icons/html.svg";
 import Java from "../../Assets/Tech_Icons/java.svg";
 import JavaScript from "../../Assets/Tech_Icons/javascript.svg";
 import MongoDB from "../../Assets/Tech_Icons/mongodb.webp";
+import Mongoose from "../../Assets/Tech_Icons/mongoose.png";
 import Nestjs from '../../Assets/Tech_Icons/nestjs.png';
 import Netlify from "../../Assets/Tech_Icons/netlify.png";
 import Node from "../../Assets/Tech_Icons/nodejs.png";
@@ -28,7 +30,6 @@ import Tailwind from "../../Assets/Tech_Icons/tailwindcss.svg";
 import Typescript from '../../Assets/Tech_Icons/typescript.png';
 import Vercel from "../../Assets/Tech_Icons/vercel.png";
 import Vscode from '../../Assets/Tech_Icons/vscode.png';
-import Typeorm from "../../Assets/Tech_Icons/Typeormlogo.png";
 import SkillButtons from '../../components/Skill_Icons/SkillButtons';
 
 
@@ -41,8 +42,8 @@ function Skill() {
             initial={{ opacity: 0, y: 100 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 1, delay: 0.5 }}>
             <Box paddingY={8}>
                 <Typography color="white" fontFamily="serif" fontSize="1.2rem">SKILL</Typography>
-                <Typography color="#9645ff" fontSize={isNonMobile ? "4.2rem" : "3rem"} fontFamily="serif" sx={{ lineHeight: "1.5", fontWeight: "bold" }}>My Skills</Typography>
-                <Typography color="white" fontFamily="serif" fontSize={isNonMobile ? "1.5rem" : "1.2rem"}>Experience in developing and deploying web applications.</Typography>
+                <Typography color="#9645ff" fontSize={isNonMobile ? "4rem" : "3rem"} fontFamily="serif" sx={{ lineHeight: "1.5", fontWeight: "bold" }}>My Skills</Typography>
+                <Typography color="white" fontFamily="serif" fontSize={isNonMobile ? "1.4rem" : "1.2rem"} lineHeight={1.2}>Experience in developing and deploying web applications.</Typography>
             </Box>
 
             <Box paddingTop={4}>
@@ -70,8 +71,9 @@ function Skill() {
                     <SkillButtons icon={Tailwind} icon_txt={"Tailwind Css"} i={10} />
                     <SkillButtons icon={Mui} icon_txt={"Mui"} i={11} />
                     <SkillButtons icon={Sequelize} icon_txt={"Sequelize"} i={12} />
-                    <SkillButtons icon={Typeorm} icon_txt={"TypeOrm"} i={12} />
-                    <SkillButtons icon={Framer} icon_txt={"Framer Motion"} i={14} />
+                    <SkillButtons icon={Typeorm} icon_txt={"TypeOrm"} i={13} />
+                    <SkillButtons icon={Mongoose} icon_txt={"Mongoose"} i={14} />
+                    <SkillButtons icon={Framer} icon_txt={"Framer Motion"} i={15} />
                 </Box>
             </Box>
 
