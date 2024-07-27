@@ -10,7 +10,7 @@ function SkillButtons({ icon, icon_txt, i }) {
             }}
         >
             <img src={icon} alt={icon_txt} draggable="false" style={{ height: "3vh", objectFit: "contain" }} />
-            <p style={{ fontFamily: 'serif', fontSize: '1.1rem', color: 'white', marginLeft: '0.5rem' }}>{icon_txt}</p>
+            <p style={{ fontFamily: 'serif', fontSize: '1rem', color: 'white', marginLeft: '0.5rem' }}>{icon_txt}</p>
         </motion.div>
     )
 }

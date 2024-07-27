@@ -41,13 +41,13 @@ function Skill() {
         <Box id="skill" padding={isNonMobile ? "4.5rem" : "1rem"} mt={!isNonMobile && 10} component={motion.div}
             initial={{ opacity: 0, y: 100 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 1, delay: 0.5 }}>
             <Box paddingY={8}>
-                <Typography color="white" fontFamily="serif" fontSize="1.2rem">SKILL</Typography>
-                <Typography color="#9645ff" fontSize={isNonMobile ? "4rem" : "3rem"} fontFamily="serif" sx={{ lineHeight: "1.5", fontWeight: "bold" }}>My Skills</Typography>
-                <Typography color="white" fontFamily="serif" fontSize={isNonMobile ? "1.4rem" : "1.2rem"} lineHeight={1.2}>Experience in developing and deploying web applications.</Typography>
+                <Typography color="white" fontFamily="serif" fontSize="1.2rem" sx={{ fontFamily: 'Sofia' }}>SKILL</Typography>
+                <Typography color="#9645ff" fontSize={isNonMobile ? "3.6rem" : "3rem"} fontFamily="serif" sx={{ lineHeight: "1.5", fontWeight: "bold" }}>My Skills</Typography>
+                <Typography color="white" fontFamily="serif" fontSize={isNonMobile ? "1.3rem" : "1.2rem"} lineHeight={1.2} sx={{ fontFamily: 'Sofia' }}>Experience in developing and deploying web applications.</Typography>
             </Box>
 
             <Box paddingTop={4}>
-                <Typography color="white" fontFamily="serif" fontSize={isNonMobile ? "1.6rem" : "1.2rem"}>Languages</Typography>
+                <Typography color="white" fontFamily="serif" fontSize={isNonMobile ? "1.6rem" : "1.3rem"} sx={{ fontFamily: 'Sofia' }}>Languages</Typography>
                 <Box display="flex" flexWrap="wrap" gap={isNonMobile ? 3 : 2} paddingY={2}>
                     <SkillButtons icon={C} icon_txt={"C"} i={1} />
                     <SkillButtons icon={Java} icon_txt={"Java"} i={2} />
@@ -57,7 +57,7 @@ function Skill() {
             </Box>
 
             <Box>
-                <Typography color="white" fontFamily="serif" fontSize={isNonMobile ? "1.6rem" : "1.2rem"}>Framework and Libraries</Typography>
+                <Typography color="white" fontFamily="serif" fontSize={isNonMobile ? "1.6rem" : "1.3rem"} sx={{ fontFamily: 'Sofia' }}>Framework and Libraries</Typography>
                 <Box display="flex" flexWrap="wrap" gap={isNonMobile ? 3 : 2} paddingY={2}>
                     <SkillButtons icon={Html} icon_txt={"Html"} i={1} />
                     <SkillButtons icon={Css} icon_txt={"Css"} i={2} />
@@ -78,7 +78,7 @@ function Skill() {
             </Box>
 
             <Box>
-                <Typography color="white" fontFamily="serif" fontSize={isNonMobile ? "1.6rem" : "1.2rem"}>Databases</Typography>
+                <Typography color="white" fontFamily="serif" fontSize={isNonMobile ? "1.6rem" : "1.3rem"} sx={{ fontFamily: 'Sofia' }}>Databases</Typography>
                 <Box display="flex" gap={isNonMobile ? 3 : 2} paddingY={2}>
                     <SkillButtons icon={MongoDB} icon_txt={"MongoDB"} i={1} />
                     <SkillButtons icon={Postgresql} icon_txt={"Postgresql"} i={2} />
@@ -86,7 +86,7 @@ function Skill() {
             </Box>
 
             <Box>
-                <Typography color="white" fontFamily="serif" fontSize={isNonMobile ? "1.6rem" : "1.2rem"}>Tools</Typography>
+                <Typography color="white" fontFamily="serif" fontSize={isNonMobile ? "1.6rem" : "1.3rem"} sx={{ fontFamily: 'Sofia' }}>Tools</Typography>
                 <Box display="flex" flexWrap="wrap" gap={isNonMobile ? 3 : 2} paddingY={2}>
                     <SkillButtons icon={Git} icon_txt={"Git"} i={1} />
                     <SkillButtons icon={Github} icon_txt={"Github"} i={2} />
@@ -97,7 +97,7 @@ function Skill() {
             </Box>
 
             <Box>
-                <Typography color="white" fontFamily="serif" fontSize={isNonMobile ? "1.6rem" : "1.2rem"}>Deployment</Typography>
+                <Typography color="white" fontFamily="serif" fontSize={isNonMobile ? "1.6rem" : "1.3rem"} sx={{ fontFamily: 'Sofia' }}>Deployment</Typography>
                 <Box display="flex" flexWrap="wrap" gap={isNonMobile ? 3 : 2} paddingY={2}>
                     <SkillButtons icon={Vercel} icon_txt={"Vercel"} i={1} />
                     <SkillButtons icon={Firebase} icon_txt={"Firebase"} i={2} />

@@ -25,37 +25,37 @@ function Navbar(props) {
             <List sx={{ height: "100%", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", gap: "3rem", marginY: "auto" }}>
                 <a href="#top" style={{ textDecoration: "none" }}>
                     <Typography sx={{
-                        color: "white", fontSize: "1.3rem", fontFamily: "serif", fontWeight: "bold",
+                        color: "white", fontSize: "1.2rem", fontFamily: "Sofia", fontWeight: "bold",
                         ':hover': { color: "#7027f9", transition: "0.5s" }
                     }}>Home</Typography>
                 </a>
                 <a href="#about" style={{ textDecoration: "none" }}>
                     <Typography sx={{
-                        color: "white", fontSize: "1.3rem", fontFamily: "serif", fontWeight: "bold",
+                        color: "white", fontSize: "1.2rem", fontFamily: "Sofia", fontWeight: "bold",
                         ':hover': { color: "#7027f9", transition: "0.5s" }
                     }}>About</Typography>
                 </a>
                 <a href="#skill" style={{ textDecoration: "none" }}>
                     <Typography sx={{
-                        color: "white", fontSize: "1.3rem", fontFamily: "serif", fontWeight: "bold",
+                        color: "white", fontSize: "1.2rem", fontFamily: "Sofia", fontWeight: "bold",
                         ':hover': { color: "#7027f9", transition: "0.5s" }
                     }}>Skill</Typography>
                 </a>
                 <a href="#project" style={{ textDecoration: "none" }}>
                     <Typography sx={{
-                        color: "white", fontSize: "1.3rem", fontFamily: "serif", fontWeight: "bold",
+                        color: "white", fontSize: "1.2rem", fontFamily: "Sofia", fontWeight: "bold",
                         ':hover': { color: "#7027f9", transition: "0.5s" }
                     }}>Project</Typography>
                 </a>
                 <a href="#experience" style={{ textDecoration: "none" }}>
                     <Typography sx={{
-                        color: "white", fontSize: "1.3rem", fontFamily: "serif", fontWeight: "bold",
+                        color: "white", fontSize: "1.2rem", fontFamily: "Sofia", fontWeight: "bold",
                         ':hover': { color: "#7027f9", transition: "0.5s" }
                     }}>Experience</Typography>
                 </a>
                 <a href="#contact" style={{ textDecoration: "none" }}>
                     <Typography sx={{
-                        color: "white", fontSize: "1.3rem", fontFamily: "serif", fontWeight: "bold",
+                        color: "white", fontSize: "1.2rem", fontFamily: "Sofia", fontWeight: "bold",
                         ':hover': { color: "#7027f9", transition: "0.5s" }
                     }}>Contact</Typography>
                 </a>
@@ -78,7 +78,7 @@ function Navbar(props) {
                             </IconButton>
                         </Tooltip>
                         <Typography fontSize="1.25rem" paddingLeft={2} fontFamily="serif"
-                            sx={{ flexGrow: 1, display: { xs: 'block', sm: 'block' }, color: "white" }}>
+                            sx={{ flexGrow: 1, display: { xs: 'block', sm: 'block' }, color: "white", fontFamily: "Sofia" }}>
                             Subham.<span style={{ color: "#9645ff" }}>( )</span>
                         </Typography>
                     </a>
@@ -90,31 +90,31 @@ function Navbar(props) {
                         <Box display="flex" gap={3}>
                             <a href="#about" style={{ textDecoration: "none" }}>
                                 <Typography sx={{
-                                    color: "white", fontSize: "1.3rem", fontFamily: "serif", fontWeight: "bold",
+                                    color: "white", fontSize: "1.2rem", fontFamily: "Sofia", fontWeight: "bold",
                                     ':hover': { color: "#7027f9", transition: "0.5s" }
                                 }}>About</Typography>
                             </a>
                             <a href="#skill" style={{ textDecoration: "none" }}>
                                 <Typography sx={{
-                                    color: "white", fontSize: "1.3rem", fontFamily: "serif", fontWeight: "bold",
+                                    color: "white", fontSize: "1.2rem", fontFamily: "Sofia", fontWeight: "bold",
                                     ':hover': { color: "#7027f9", transition: "0.5s" }
                                 }}>Skill</Typography>
                             </a>
                             <a href="#project" style={{ textDecoration: "none" }}>
                                 <Typography sx={{
-                                    color: "white", fontSize: "1.3rem", fontFamily: "serif", fontWeight: "bold",
+                                    color: "white", fontSize: "1.2rem", fontFamily: "Sofia", fontWeight: "bold",
                                     ':hover': { color: "#7027f9", transition: "0.5s" }
                                 }}>Project</Typography>
                             </a>
                             <a href="#experience" style={{ textDecoration: "none" }}>
                                 <Typography sx={{
-                                    color: "white", fontSize: "1.3rem", fontFamily: "serif", fontWeight: "bold",
+                                    color: "white", fontSize: "1.2rem", fontFamily: "Sofia", fontWeight: "bold",
                                     ':hover': { color: "#7027f9", transition: "0.5s" }
                                 }}>Experience</Typography>
                             </a>
                             <a href="#contact" style={{ textDecoration: "none" }}>
                                 <Typography sx={{
-                                    color: "white", fontSize: "1.3rem", fontFamily: "serif", fontWeight: "bold",
+                                    color: "white", fontSize: "1.2rem", fontFamily: "Sofia", fontWeight: "bold",
                                     ':hover': { color: "#7027f9", transition: "0.5s" }
                                 }}>Contact</Typography>
                             </a>

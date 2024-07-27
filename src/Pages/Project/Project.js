@@ -12,9 +12,9 @@ function Project() {
         <Box id="project" padding={isNonMobile ? "6rem" : "1rem"} sx={{ fontFamily: "serif", color: "white" }} component={motion.div}
             initial={{ opacity: 0, y: 100 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 1, delay: 0.5 }}>
             <Box paddingY={6}>
-                <Typography color="white" fontFamily="serif" fontSize="1.2rem">PROJECT</Typography>
-                <Typography color="#9645ff" fontSize={isNonMobile ? "4rem" : "3rem"} fontFamily="serif" sx={{ lineHeight: "1.5", fontWeight: "bold" }}>My Projects</Typography>
-                <Typography color="white" fontFamily="serif" fontSize={isNonMobile ? "1.4rem" : "1.2rem"} lineHeight={1.2}>I like to take responsibility to craft aesthetic user experience <br />using modern web architecture.</Typography>
+                <Typography color="white" fontFamily="serif" fontSize="1.2rem" sx={{ fontFamily: 'Sofia' }}>PROJECT</Typography>
+                <Typography color="#9645ff" fontSize={isNonMobile ? "3.6rem" : "3rem"} fontFamily="serif" sx={{ lineHeight: "1.5", fontWeight: "bold" }}>My Projects</Typography>
+                <Typography color="white" fontFamily="serif" fontSize={isNonMobile ? "1.3rem" : "1.1rem"} lineHeight={1.2} sx={{ fontFamily: 'Sofia' }}>I like to take responsibility to craft aesthetic user experience <br />using modern web architecture.</Typography>
             </Box>
             <Box width="100%" display="flex" flexWrap="wrap" justifyContent="space-evenly" rowGap={4} px={!isNonMobile && "1rem"}>
                 <ProjectCard Project_Pic={require("../../Assets/Portfolio.png")} Title={"Portfolio Website"}

@@ -24,9 +24,9 @@ function Experience({ experience }) {
                             borderRadius: '8px'
                         }} src={require(`../../Assets/Experience/${experience.img}`)} alt='company' />
                         <Box display="flex" flexDirection="column" >
-                            <Typography textAlign='start' fontFamily="serif" pl={2} fontSize={isNonMobile ? "1.4rem" : "1rem"} lineHeight={1} color="white">{experience.role}</Typography>
-                            <Typography textAlign='start' fontFamily="serif" pl={2} fontSize={isNonMobile ? "1.1rem" : "0.8rem"} lineHeight={1.5} color="rgb(242 243 244 / 60%)">{experience.company}</Typography>
-                            <Typography textAlign='start' fontFamily="serif" pl={2} fontSize={isNonMobile ? "1rem" : "0.7rem"} lineHeight={1} color="rgb(177 178 179 / 60%)">{experience.date}</Typography>
+                            <Typography textAlign='start' fontFamily="serif" pl={isNonMobile ? 2 : 0.8} fontSize={isNonMobile ? "1.4rem" : "1rem"} lineHeight={1} color="white">{experience.role}</Typography>
+                            <Typography textAlign='start' fontFamily="serif" pl={isNonMobile ? 2 : 0.8} fontSize={isNonMobile ? "1.1rem" : "0.8rem"} lineHeight={isNonMobile ? 1.5 : 2} color="rgb(242 243 244 / 60%)" sx={{ fontFamily: 'Sofia' }}>{experience.company}</Typography>
+                            <Typography textAlign='start' fontFamily="serif" pl={isNonMobile ? 2 : 0.8} fontSize={isNonMobile ? "1rem" : "0.7rem"} lineHeight={1} color="rgb(177 178 179 / 60%)">{experience.date}</Typography>
                         </Box>
                     </Box>
                     <Box display="flex" alignItems="start" justifyContent='space-around' gap={2} mt={!isNonMobile && 1}>
@@ -40,19 +40,19 @@ function Experience({ experience }) {
                     </Box>
                 </Box>
 
-                <Box mt={isNonMobile && 1} pl={2}>
+                <Box mt={isNonMobile && 1} pl={isNonMobile && 2}>
                     {experience.desc?.map((item, i) =>
                         <Box display="flex" alignItems="start" justifyContent="start" pt={1}>
                             <Circle sx={{ width: `${isNonMobile ? '1rem' : '0.8rem'}`, height: `${isNonMobile ? '1rem' : '0.8rem'}`, color: 'gray' }} />
-                            <Typography textAlign='start' fontFamily="serif" color="rgb(242 243 244 / 60%)" pl={1} fontSize="0.9rem" lineHeight={1}>{item}</Typography>
+                            <Typography textAlign='start' fontFamily={"serif"} color="rgb(242 243 244 / 60%)" pl={1} fontSize="0.9rem" lineHeight={1.2}>{item}</Typography>
                         </Box>
                     )}
                 </Box>
 
                 <Box display="flex" justifyContent="center" alignItems="center" flexWrap="wrap" gap={1} mt={2}>
-                    <Typography fontFamily="serif" fontSize={isNonMobile ? "1.2rem" : "1rem"} color="rgb(242 243 244 / 60%)" fontWeight="bold">Skills :</Typography>
+                    <Typography fontFamily="serif" fontSize={isNonMobile ? "1.2rem" : "1rem"} color="rgb(242 243 244 / 90%)" fontWeight="bold" sx={{ fontFamily: 'Sofia' }}>Skills :</Typography>
                     {experience.skills?.map((item, i) => (
-                        <Chip key={i} label={item} size='small' sx={{ backgroundColor: 'rgba(133, 76, 230, 0.082)', color: "#9645ff", fontFamily: "serif", border: '0.1px solid #9645ff' }} />
+                        <Chip key={i} label={item} size='small' sx={{ backgroundColor: 'rgba(133, 76, 230, 0.082)', color: "#fff", fontFamily: "Sofia", border: '0.1px solid #9645ff' }} />
                     ))}
                 </Box>
 

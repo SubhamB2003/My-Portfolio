@@ -12,7 +12,7 @@ function GithubCal() {
             paddingX={!isNonMobile && 3}
             gap={isNonMobile ? 8 : 4} paddingY={20} component={motion.div}
             initial={{ opacity: 0, y: 100 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 1, delay: 0.5 }}>
-            <Typography fontFamily="serif" fontWeight="bold" fontSize={isNonMobile ? "3rem" : "2rem"}>Days I <span style={{ color: "#9645ff" }}>Code</span></Typography>
+            <Typography fontFamily="serif" fontWeight="bold" fontSize={isNonMobile ? "2.6rem" : "2rem"} sx={{ fontFamily: 'Sofia' }}>Days I <span style={{ color: "#9645ff" }}>Code</span></Typography>
             <GitHubCalendar username='SubhamB2003'
                 blockSize={15}
                 blockMargin={5}

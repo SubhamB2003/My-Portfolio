@@ -11,8 +11,8 @@ function Contact() {
         <Box id="contact" padding={isNonMobile ? "5rem" : "1rem"} component={motion.div}
             initial={{ opacity: 0, y: 100 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 1, delay: 0.5 }}>
             <Box paddingY={2} marginBottom={3}>
-                <Typography color="#9645ff" fontSize={isNonMobile ? "4rem" : "3rem"} fontFamily="serif" sx={{ lineHeight: "1.2", fontWeight: "bold" }}>Contact</Typography>
-                <Typography color="white" fontFamily="serif" fontSize={isNonMobile ? "1.5rem" : "1.2rem"}>Hey, please share your thoughts.</Typography>
+                <Typography color="#9645ff" fontSize={isNonMobile ? "3.6rem" : "3rem"} fontFamily="serif" sx={{ lineHeight: "1.2", fontWeight: "bold" }}>Contact</Typography>
+                <Typography color="white" fontFamily="serif" fontSize={isNonMobile ? "1.4rem" : "1.2rem"} sx={{ fontFamily: 'Sofia' }}>Hey, please share your thoughts.</Typography>
             </Box>
             <Box display="flex" justifyContent="space-around">
                 {isNonMobile && (

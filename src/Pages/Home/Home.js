@@ -31,14 +31,14 @@ function Home() {
         <Flexbetween height="100vh" padding={isNonMobile ? "4.5rem" : "1rem"} mt={8}>
             <Box display="flex" flexDirection="column" justifyContent="center" component={motion.div}
                 initial={{ opacity: 0, y: 100 }} whileInView={{ opacity: 1, y: 1 }} transition={{ duration: 1, delay: 0.2 }}>
-                <Typography sx={{ fontSize: "1.3rem", color: "white" }} textAlign="start" color="white" fontFamily="serif">
+                <Typography sx={{ fontSize: "1.3rem", color: "white", fontFamily: "Sofia" }} textAlign="start" color="white" fontFamily="serif">
                     <span style={{ color: "#9645ff" }}>{"`<h5> "}</span>Hi, my name is <span style={{ color: "#9645ff" }}>{" </h5>`"}</span>
                 </Typography>
                 <Typography fontFamily="serif" sx={{ fontSize: `${isMobile ? "3.5rem" : "2.5rem"}`, fontWeight: "bold", lineHeight: "1.2" }} color="white">
                     Subham Bhattacharjee</Typography>
                 <Box paddingY={2} zIndex={1}>
                     <Typography color="white" fontFamily="serif" fontSize={isMobile ? "2rem" : "1.5rem"}>
-                        {"`<h2>"} I am a {" "} <span ref={textRef} style={{ color: "#9645ff" }}></span> {"</h2>`"}
+                        {"`<h2>"} I am a {" "} <span ref={textRef} style={{ color: "#9645ff", fontFamily: "Sofia" }}></span> {"</h2>`"}
                         <span style={{ fontSize: `${isMobile ? "2rem" : "1.5rem"}`, animation: "typedjsBlink 0.7s infinite" }} />
                     </Typography>
                 </Box>
@@ -65,7 +65,7 @@ function Home() {
                         <Button variant="Let's Talk" sx={{
                             border: "2px solid #9645ff", boxShadow: 'rgba(23, 92, 230, 1) 0px 4px 24px',
                             paddingX: "2.2rem", paddingY: "0.4rem", color: "white", fontSize: "1.1rem",
-                            fontFamily: "serif", borderRadius: "10px", textTransform: 'none', ':hover': { backgroundColor: "rgb(109 40 217)" }
+                            fontFamily: "Sofia", borderRadius: "10px", textTransform: 'none', ':hover': { backgroundColor: "rgb(109 40 217)" }
                         }}>Let's Talk</Button>
                     </a>
                 </Box>

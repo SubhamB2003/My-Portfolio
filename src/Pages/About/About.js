@@ -32,7 +32,7 @@ function About() {
             </Box>
             <Box display="flex" flexDirection="column" justifyContent="center" alignItems="center" mt={!isNonMobile && "30px"}>
                 <Box>
-                    <Typography fontFamily="serif" fontSize={isNonMobile ? "1.3rem" : "1.1rem"} color="white">I am an undergrad with a passion for learning and growing in the professional world.
+                    <Typography fontFamily="serif" fontSize={isNonMobile ? "1.3rem" : "1.1rem"} color="white" sx={{ fontFamily: 'Sofia' }}>I am an undergrad with a passion for learning and growing in the professional world.
                         I have decent communication and problem-solving skill. I am eager to apply my skills to a new role and
                         contribute to the success of an organization. I loved being a part of the open-source program. I am
                         confident that my enthusiasm, dedication, and willingness to learn will make me an asset to any
