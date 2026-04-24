@@ -1,6 +1,6 @@
 import { Box, Button, Typography, useMediaQuery } from '@mui/material';
 import { motion } from 'framer-motion';
-import React, { useEffect, useRef } from 'react';
+import { useEffect, useRef } from 'react';
 import VanillaTilt from 'vanilla-tilt';
 
 
@@ -32,11 +32,12 @@ function About() {
             </Box>
             <Box display="flex" flexDirection="column" justifyContent="center" alignItems="center" mt={!isNonMobile && "30px"}>
                 <Box>
-                    <Typography fontFamily="serif" fontSize={isNonMobile ? "1.3rem" : "1.1rem"} color="white" sx={{ fontFamily: 'Sofia' }}>I am an undergrad with a passion for learning and growing in the professional world.
-                        I have decent communication and problem-solving skill. I am eager to apply my skills to a new role and
-                        contribute to the success of an organization. I loved being a part of the open-source program. I am
-                        confident that my enthusiasm, dedication, and willingness to learn will make me an asset to any
-                        team and I love to do challenging works where I can utilize my ability and improve it. </Typography>
+                    <Typography fontFamily="serif" fontSize={isNonMobile ? "1.3rem" : "1.1rem"} color="white" sx={{ fontFamily: 'Sofia' }}>I am 
+                        a Full-Stack Software Engineer with nearly 2 years of experience building scalable, user-focused web applications and 
+                        AI-powered solutions. Skilled in React.js, Node.js, NestJS, TypeScript, Python and PostgreSQL, I enjoy solving 
+                        real-world problems through clean code and efficient system design. Passionate about continuous learning, 
+                        collaboration, and innovation, I strive to create impactful digital solutions while growing as a technology 
+                        professional. </Typography>
                 </Box>
                 <Box sx={{ position: "relative", top: `${isNonMobile && "6%"}` }} mt={!isNonMobile && 4}>
                     <a href="https://drive.google.com/drive/folders/1lOOKzPGjwm0q51D9DGgzs9ikghgR_dxV?usp=sharing" target='_blank' rel="noreferrer" style={{ textDecoration: "none" }}>

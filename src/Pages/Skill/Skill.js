@@ -31,6 +31,7 @@ import Typescript from '../../Assets/Tech_Icons/typescript.png';
 import Vercel from "../../Assets/Tech_Icons/vercel.png";
 import Vscode from '../../Assets/Tech_Icons/vscode.png';
 import SkillButtons from '../../components/Skill_Icons/SkillButtons';
+import Python from '../../Assets/Tech_Icons/python.png'
 
 
 function Skill() {
@@ -53,6 +54,7 @@ function Skill() {
                     <SkillButtons icon={Java} icon_txt={"Java"} i={2} />
                     <SkillButtons icon={JavaScript} icon_txt={"JavaScript"} i={3} />
                     <SkillButtons icon={Typescript} icon_txt={"TypeScript"} i={4} />
+                    <SkillButtons icon={Python} icon_txt={"Python"} i={5} />
                 </Box>
             </Box>
 
