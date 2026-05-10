@@ -1,0 +1,22 @@
+.cursor {
+  border-radius: 100%;
+  background: #fff;
+  mix-blend-mode: difference;
+  position: fixed;
+  width: 20px;
+  height: 20px;
+  user-select: none;
+  pointer-events: none;
+  z-index: 50;
+}
+
+.cursor-followed {
+  border-radius: 100%;
+  background: transparent;
+  border: 1px solid white;
+  position: fixed;
+  user-select: none;
+  pointer-events: none;
+  z-index: 50;
+  opacity: 0.5;
+}

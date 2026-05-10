@@ -1,0 +1,28 @@
+* {
+  cursor: none;
+  scroll-behavior: smooth;
+}
+
+img {
+  width: "auto";
+  height: "auto";
+}
+
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: black;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #7027f9;
+  border-radius: 10px;
+  opacity: 0.5;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  opacity: 1;
+}
