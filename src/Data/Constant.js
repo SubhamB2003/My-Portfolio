@@ -5,7 +5,7 @@ export const experiences = [
         url: "https://infomaticae.com",
         role: "Software Developer",
         company: "Infomaticae Technology Pvt. Ltd.",
-        date: "Jul 2024 - Present",
+        date: "Jul 2024 - Jul 2026",
         desc: [
             "Collaborated with senior analysts in the deployment of ERP modules, ensuring smooth integration with existing processes.",
             "Coordinated with various departments (e.g., Accounts, Sales) to gather requirements and provide ERP solutions tailored to their needs.",
